@@ -1,0 +1,6 @@
+module Pods_RedditProject {
+  umbrella header "Pods-RedditProject-umbrella.h"
+
+  export *
+  module * { export * }
+}
