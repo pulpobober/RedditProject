@@ -10,13 +10,13 @@ import UIKit
 
 //TODO: Add protocol
 class NetworkRepository {
-    static let sharedInstance = NetworkRepository()
     var accessToken: String = ""
     
-    static func loadJSON() {
+    //TODO: Devolver un observable, evitar el ?
+    static func getTopEntries() -> [RedditEntrie]? {
         let session: URLSession = URLSession(configuration: URLSessionConfiguration.default)
         guard let url = URL(string: "https://oauth.reddit.com/r/redditdev/top.json") else {
-            return
+            return nil
         }
         
         var request = URLRequest(url: url)
@@ -25,26 +25,30 @@ class NetworkRepository {
         request.setValue(token, forHTTPHeaderField: "Authorization")
         
         let task = session.dataTask(with: request, completionHandler: { (data, response, error) in
-            guard let data = data else {
+
+//            if let httpResponse = response as? HTTPURLResponse {
+//                let statusCode = httpResponse.statusCode
+//                print(statusCode)
+//            }
+
+            guard let data = data,
+                  let json = try? JSONSerialization.jsonObject(with: data, options: []),
+                  let jsonDic = json as? [String: Any],
+                  let jsonDicData = jsonDic["data"] as? [String: Any],
+                  let childrenDic = jsonDicData["children"] as? [Any],
+                  let jsonModel = try? JSONSerialization.data(withJSONObject: childrenDic),
+                  let redditEntries = try? JSONDecoder.redditDecoder.decode([ResultTopEntries].self, from: jsonModel)
+                  
+            else {
                 return
+                //error
             }
             
-            if let httpResponse = response as? HTTPURLResponse {
-                let statusCode = httpResponse.statusCode
-                print(statusCode)
-            }
+            print(redditEntries)
 
-            do {
-                let json = try JSONSerialization.jsonObject(with: data, options: [])
-                if let jsonDic = json as? [String: Any] {
-                    print(json)
-                    
-                }
-            } catch {
-                print("JSON error: \(error.localizedDescription)")
-            }
         })
         task.resume()
+        return nil
     }
     
     static func requestToken() {
@@ -93,3 +97,4 @@ class NetworkRepository {
         }.resume()
     }
 }
+

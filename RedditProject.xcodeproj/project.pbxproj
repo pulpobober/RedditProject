@@ -21,6 +21,9 @@
 		F2048D12257E7C9300D60DCF /* NetworkRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2048D11257E7C9300D60DCF /* NetworkRepository.swift */; };
 		F20E550025800D4B0085F944 /* NetworkConfigs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20E54FF25800D4B0085F944 /* NetworkConfigs.swift */; };
 		F2ED55CB258022B700906DFF /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2ED55CA258022B700906DFF /* Bundle+Extension.swift */; };
+		F2ED55F525803D9E00906DFF /* RedditEntrie.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2ED55F425803D9E00906DFF /* RedditEntrie.swift */; };
+		F2ED55FB25803DDE00906DFF /* ResultTopEntries.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2ED55FA25803DDE00906DFF /* ResultTopEntries.swift */; };
+		F2ED560325803DFF00906DFF /* JSONDecoder+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2ED560225803DFF00906DFF /* JSONDecoder+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +71,9 @@
 		F2048D11257E7C9300D60DCF /* NetworkRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRepository.swift; sourceTree = "<group>"; };
 		F20E54FF25800D4B0085F944 /* NetworkConfigs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConfigs.swift; sourceTree = "<group>"; };
 		F2ED55CA258022B700906DFF /* Bundle+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Extension.swift"; sourceTree = "<group>"; };
+		F2ED55F425803D9E00906DFF /* RedditEntrie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedditEntrie.swift; sourceTree = "<group>"; };
+		F2ED55FA25803DDE00906DFF /* ResultTopEntries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultTopEntries.swift; sourceTree = "<group>"; };
+		F2ED560225803DFF00906DFF /* JSONDecoder+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JSONDecoder+Extension.swift"; sourceTree = "<group>"; };
 		FF48D06D4BF6B2B96053202C /* libPods-RedditProjectTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RedditProjectTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -149,6 +155,7 @@
 		F2048CD5257E76A200D60DCF /* RedditProject */ = {
 			isa = PBXGroup;
 			children = (
+				F2ED55DB2580268000906DFF /* Models */,
 				F2ED55C9258022A500906DFF /* Extensions */,
 				F2048D10257E7C5A00D60DCF /* Repositories */,
 				F2048CD6257E76A200D60DCF /* AppDelegate.swift */,
@@ -201,8 +208,18 @@
 			isa = PBXGroup;
 			children = (
 				F2ED55CA258022B700906DFF /* Bundle+Extension.swift */,
+				F2ED560225803DFF00906DFF /* JSONDecoder+Extension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F2ED55DB2580268000906DFF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F2ED55F425803D9E00906DFF /* RedditEntrie.swift */,
+				F2ED55FA25803DDE00906DFF /* ResultTopEntries.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -407,11 +424,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2ED560325803DFF00906DFF /* JSONDecoder+Extension.swift in Sources */,
 				F2048D12257E7C9300D60DCF /* NetworkRepository.swift in Sources */,
 				F2ED55CB258022B700906DFF /* Bundle+Extension.swift in Sources */,
 				F2048CDB257E76A200D60DCF /* ViewController.swift in Sources */,
 				F2048CD7257E76A200D60DCF /* AppDelegate.swift in Sources */,
 				F2048CD9257E76A200D60DCF /* SceneDelegate.swift in Sources */,
+				F2ED55FB25803DDE00906DFF /* ResultTopEntries.swift in Sources */,
+				F2ED55F525803D9E00906DFF /* RedditEntrie.swift in Sources */,
 				F20E550025800D4B0085F944 /* NetworkConfigs.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
