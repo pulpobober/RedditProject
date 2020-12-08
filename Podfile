@@ -1,7 +1,8 @@
-# Uncomment the next line to define a global platform for your project
-# platform :ios, 11.0'
+platform :ios, '13.0'
 
 target 'RedditProject' do
+
+   pod 'RxSwift', '5.1.1'
 
   target 'RedditProjectTests' do
     inherit! :search_paths
