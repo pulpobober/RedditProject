@@ -15,6 +15,8 @@ protocol RedditServiceProtocol {
 }
 
 class RedditService: RedditServiceProtocol {
+    private init() { }
+    
     static let shared = RedditService()
     
     func getTopEntries() -> Observable<[ResultTopEntries]> {
