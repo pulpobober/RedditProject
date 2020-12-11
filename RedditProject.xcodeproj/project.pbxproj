@@ -26,7 +26,6 @@
 		F2ED55F525803D9E00906DFF /* RedditEntrie.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2ED55F425803D9E00906DFF /* RedditEntrie.swift */; };
 		F2ED55FB25803DDE00906DFF /* ResultTopEntries.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2ED55FA25803DDE00906DFF /* ResultTopEntries.swift */; };
 		F2ED560325803DFF00906DFF /* JSONDecoder+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2ED560225803DFF00906DFF /* JSONDecoder+Extension.swift */; };
-		F2ED56842580429E00906DFF /* libRxSwift.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F2ED56832580429E00906DFF /* libRxSwift.a */; };
 		F2ED56A225804B5B00906DFF /* RedditListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2ED56A125804B5B00906DFF /* RedditListViewModel.swift */; };
 		F2ED56AA25804B6700906DFF /* RedditListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2ED56A925804B6700906DFF /* RedditListViewCell.swift */; };
 /* End PBXBuildFile section */
@@ -77,6 +76,7 @@
 		F20E54FF25800D4B0085F944 /* NetworkConfigs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConfigs.swift; sourceTree = "<group>"; };
 		F21E7EFB2582B77600331C06 /* RedditCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedditCellViewModel.swift; sourceTree = "<group>"; };
 		F21E7F032582B7E500331C06 /* Array+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Extension.swift"; sourceTree = "<group>"; };
+		F21E80622583AC6000331C06 /* libSDWebImage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libSDWebImage.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2ED55CA258022B700906DFF /* Bundle+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Extension.swift"; sourceTree = "<group>"; };
 		F2ED55F425803D9E00906DFF /* RedditEntrie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedditEntrie.swift; sourceTree = "<group>"; };
 		F2ED55FA25803DDE00906DFF /* ResultTopEntries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultTopEntries.swift; sourceTree = "<group>"; };
@@ -93,7 +93,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D17364BA1EFB01A72D6A7C9B /* libPods-RedditProject.a in Frameworks */,
-				F2ED56842580429E00906DFF /* libRxSwift.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +118,7 @@
 		0CF8C21655ABE32C4B9D38FA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F21E80622583AC6000331C06 /* libSDWebImage.a */,
 				F2ED56832580429E00906DFF /* libRxSwift.a */,
 				82CEB8BEFD1A9DFA20F42466 /* libPods-RedditProject.a */,
 				BB15E6A8C4C19EC3B3850B13 /* libPods-RedditProject-RedditProjectUITests.a */,
@@ -647,6 +647,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M6L6F2EMVA;
+				FRAMEWORK_SEARCH_PATHS = "";
 				INFOPLIST_FILE = RedditProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -667,6 +668,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M6L6F2EMVA;
+				FRAMEWORK_SEARCH_PATHS = "";
 				INFOPLIST_FILE = RedditProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

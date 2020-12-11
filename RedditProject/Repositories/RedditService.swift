@@ -32,9 +32,9 @@ class RedditService: RedditServiceProtocol {
     
     private func getTopEntries(success: @escaping ([ResultTopEntries]) -> Void, failure: ((_ error: Error) -> Void)?) {
         let session: URLSession = URLSession(configuration: URLSessionConfiguration.default)
-        let urlString = "https://oauth.reddit.com/r/redditdev/top.json"
+        let urlString = "https://oauth.reddit.com/r/popular/top.json"
         guard let url = URL(string: urlString) else {
-            failure?(RedditError(message: "The url is not an URL: \(urlString)"))
+            failure?(RedditServerError(message: "The url is not an URL: \(urlString)"))
             return
         }
         
@@ -45,7 +45,8 @@ class RedditService: RedditServiceProtocol {
 
         let task = session.dataTask(with: request, completionHandler: { (data, response, error) in
             guard let httpResponse = response as? HTTPURLResponse, httpResponse.statusCode == 200 else {
-                failure?(RedditError(message: "Cant connect to the server"))
+                //TODO: Si es error 401, volver a pedir el token, con algún retry
+                failure?(RedditServerError(message: "Cant connect to the server"))
                 return
             }
             
@@ -56,7 +57,7 @@ class RedditService: RedditServiceProtocol {
                   let childrenDic = jsonDicData["children"] as? [Any],
                   let jsonModel = try? JSONSerialization.data(withJSONObject: childrenDic),
                   let redditEntries = try? JSONDecoder.redditDecoder.decode([ResultTopEntries].self, from: jsonModel) else {
-                failure?(RedditError(message: "Cant deserialize response from server"))
+                failure?(RedditServerError(message: "Cant deserialize response from server"))
                 return
             }
             print(redditEntries)
@@ -84,14 +85,14 @@ class RedditService: RedditServiceProtocol {
         let timeout = 15
         let uncodedClientIDAndPassword = "\(NetworkConfigs.sharedInstance.clientID):"
         guard let uncodedClientIDAndPasswordData = uncodedClientIDAndPassword.data(using: .utf8) else {
-            failure?(RedditError(message: "Unexpected Error"))
+            failure?(RedditServerError(message: "Unexpected Error"))
             return
         }
         let encodedClientIDAndPassword = uncodedClientIDAndPasswordData.base64EncodedString(options: .lineLength64Characters)
         
         let authStr = "Basic \(encodedClientIDAndPassword)"
         guard let serviceUrl = URL(string: ACCESS_TOKEN_URL) else {
-            failure?(RedditError(message: "Unexpected Error"))
+            failure?(RedditServerError(message: "Unexpected Error"))
             return
         }
         
@@ -114,17 +115,17 @@ class RedditService: RedditServiceProtocol {
                   let json = try? JSONSerialization.jsonObject(with: data, options: []),
                   let jsonDic = json as? [String: Any],
                   let accessToken = jsonDic["access_token"] as? String else {
-                failure?(RedditError(message: "Cant deserialize response from server"))
+                failure?(RedditServerError(message: "Cant deserialize response from server"))
                 return
             }
-            
+            print(accessToken)
             success(accessToken)
             return
         }.resume()
     }
 }
 
-struct RedditError: Error {
+struct RedditServerError: Error {
     let message: String
 }
 

@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 class RedditListViewCell: UITableViewCell {
     
@@ -39,8 +40,7 @@ class RedditListViewCell: UITableViewCell {
         //TODO date
         dateLabel.text = "\(viewModel.date)"
         titleLabel.text = viewModel.title
-        //TODO: Imagen
-//        postImage.image =
+        postImage.sd_setImage(with: viewModel.thumbURL, completed: nil)
         dismissButton.setTitle(viewModel.dismissButtonTitle, for: .normal)
         commentsLabel.text = viewModel.numComments
     }
@@ -99,7 +99,7 @@ private extension RedditListViewCell {
     
     func prepareDismissButton() {
         //TODO: Imagen dismiss
-        //        dismissButton.setImage(<#T##image: UIImage?##UIImage?#>, for: <#T##UIControl.State#>)
+//                dismissButton.setImage(<#T##image: UIImage?##UIImage?#>, for: <#T##UIControl.State#>)
         dismissButton.setTitleColor(.white, for: .normal)
         dismissButton.titleLabel?.font = UIFont.systemFont(ofSize: 12, weight: .medium)
     }

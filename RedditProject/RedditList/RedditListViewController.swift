@@ -6,12 +6,15 @@
 //
 
 import UIKit
-
 import RxSwift
+
 class RedditListViewController: UIViewController {
-    private let _disposeBag = DisposeBag()
     
     @IBOutlet weak var tableView: UITableView!
+    
+    @IBOutlet weak var dismissAllButton: UIButton!
+    
+    private let _disposeBag = DisposeBag()
     private let _viewModel = RedditListViewModel()
         
     override func viewDidLoad() {
@@ -19,12 +22,15 @@ class RedditListViewController: UIViewController {
         bindView()
         bindViewModel()
     }
+}
+
+private extension RedditListViewController {
     
     func bindView() {
-        tableView.delegate = self
-        tableView.dataSource = self
-        tableView.separatorStyle = .singleLine
-        tableView.separatorColor = .white
+        setStyle()
+        prepareTableView()
+        prepareNavigationBar()
+        prepareDismissButton()
     }
     
     func bindViewModel() {
@@ -35,11 +41,37 @@ class RedditListViewController: UIViewController {
             })
             .disposed(by: _disposeBag)
     }
+    func setStyle() {
+        view.backgroundColor = .black
+    }
+    
+    func prepareTableView() {
+        tableView.delegate = self
+        tableView.dataSource = self
+        tableView.separatorStyle = .singleLine
+        tableView.separatorColor = .white
+        tableView.backgroundColor = .black
+    }
+    
+    func prepareNavigationBar() {
+        guard let navigationBar = self.navigationController?.navigationBar else {
+            return
+        }
+        
+        navigationBar.barTintColor = .black
+        navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
+        navigationBar.topItem?.title = _viewModel.titleNavigationBar
+        navigationBar.barStyle = .black
+    }
+    
+    func prepareDismissButton() {
+        dismissAllButton.backgroundColor = .black
+        dismissAllButton.setTitle(_viewModel.titleDismissAllButton, for: .normal)
+        dismissAllButton.titleLabel?.textColor = .orange
+    }
 }
 
-
 extension RedditListViewController: UITableViewDelegate, UITableViewDataSource {
-    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return _viewModel.numberOfRows()
     }

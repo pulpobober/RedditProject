@@ -12,6 +12,18 @@ struct RedditEntrie: Codable {
     let author: String
     let created: Int
     let thumbnail: String
-    let num_comments: Int
+    let numComments: Int
     let visited: Bool
+}
+
+extension RedditEntrie {
+    enum CodingKeys: String, CodingKey {
+        case title
+        case author
+        case created
+        case thumbnail
+        case visited
+        
+        case numComments = "num_comments"
+    }
 }

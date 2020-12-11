@@ -23,20 +23,22 @@ class RedditListCellViewModel {
         return redditEntrie.visited
     }
     
-    var date: Int {
-        return redditEntrie.created //Es un int
+    var date: Date {
+        //TODO: Hacerlo bien con Int
+        let timeInterval = TimeInterval(redditEntrie.created)
+        return Date(timeIntervalSince1970: timeInterval)
     }
     
     var title: String {
-        return redditEntrie.title //Es un int
+        return redditEntrie.title
     }
 
-    var thumbURL: String {
-        return redditEntrie.thumbnail //No es una URL
+    var thumbURL: URL? {
+        return URL(string: redditEntrie.thumbnail)
     }
     
     var numComments: String {
-        return "\(redditEntrie.num_comments) comments"
+        return "\(redditEntrie.numComments) comments"
     }
     
     

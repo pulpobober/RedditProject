@@ -22,6 +22,14 @@ class RedditListViewModel {
         requestTokenService()
     }
     
+    var titleNavigationBar: String {
+        return "Reddit Posts"
+    }
+    
+    var titleDismissAllButton: String {
+        return "Dismiss All"
+    }
+    
     public func getRedditEntrie(index: Int) -> RedditEntrie? {
         return _topEntries[safe: index]?.data
     }
