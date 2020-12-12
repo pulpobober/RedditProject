@@ -32,6 +32,20 @@ private extension RedditListViewController {
         prepareTableView()
         prepareNavigationBar()
         prepareDismissButton()
+        
+        dismissAllButton
+            .rx
+            .tap
+            .observeOn(MainScheduler.instance)
+            .subscribe(onNext: { [weak self] _ in
+                guard let tableView = self?.tableView,
+                      let indexPaths = tableView.getAllIndexPathInSection(section: 0) else {
+                    return
+                }
+                self?._viewModel.deleteAllPosts()
+                tableView.deleteRows(at: indexPaths, with: .fade)
+            })
+            .disposed(by: _disposeBag)
     }
     
     func bindViewModel() {
@@ -69,7 +83,7 @@ private extension RedditListViewController {
     func prepareDismissButton() {
         dismissAllButton.backgroundColor = .black
         dismissAllButton.setTitle(_viewModel.titleDismissAllButton, for: .normal)
-        dismissAllButton.titleLabel?.textColor = .orange
+        dismissAllButton.setTitleColor(.orange, for: .normal)
     }
     
     func bindCell(cell: RedditListViewCell) {

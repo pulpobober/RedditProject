@@ -41,6 +41,10 @@ class RedditListViewModel {
     public func deletePost(index: Int) {
         _topEntries.removeAt(safeIndex: index)
     }
+    
+    public func deleteAllPosts() {
+        _topEntries.removeAll()
+    }
 }
 
 private extension RedditListViewModel {
