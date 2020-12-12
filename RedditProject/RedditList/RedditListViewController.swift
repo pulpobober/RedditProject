@@ -7,6 +7,7 @@
 
 import UIKit
 import RxSwift
+import RxCocoa
 
 class RedditListViewController: UIViewController {
     
@@ -51,6 +52,7 @@ private extension RedditListViewController {
         tableView.separatorStyle = .singleLine
         tableView.separatorColor = .white
         tableView.backgroundColor = .black
+        tableView.tableFooterView = UIView()
     }
     
     func prepareNavigationBar() {
@@ -69,6 +71,24 @@ private extension RedditListViewController {
         dismissAllButton.setTitle(_viewModel.titleDismissAllButton, for: .normal)
         dismissAllButton.titleLabel?.textColor = .orange
     }
+    
+    func bindCell(cell: RedditListViewCell) {
+        cell.dismissButton
+            .rx
+            .tap
+            .observeOn(MainScheduler.instance)
+            .subscribe(onNext: { [weak self] _ in
+                guard let indexPath = self?.tableView.indexPath(for: cell) else {
+                    return
+                }
+                
+                self?._viewModel.deletePost(index: indexPath.row)
+                self?.tableView.beginUpdates()
+                self?.tableView.deleteRows(at: [indexPath], with: .left)
+                self?.tableView.endUpdates()
+            })
+            .disposed(by: cell.disposeBag)
+    }
 }
 
 extension RedditListViewController: UITableViewDelegate, UITableViewDataSource {
@@ -85,6 +105,7 @@ extension RedditListViewController: UITableViewDelegate, UITableViewDataSource {
         let cellViewModel = RedditListCellViewModel(redditEntrie: redditEntrie)
         cell.configureCell()
         cell.bindViewModel(viewModel: cellViewModel)
+        bindCell(cell: cell)
         return cell
     }
     

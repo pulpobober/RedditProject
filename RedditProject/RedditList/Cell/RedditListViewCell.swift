@@ -7,6 +7,7 @@
 
 import UIKit
 import SDWebImage
+import RxSwift
 
 class RedditListViewCell: UITableViewCell {
     
@@ -18,6 +19,8 @@ class RedditListViewCell: UITableViewCell {
     @IBOutlet weak var postImage: UIImageView!
     @IBOutlet weak var dismissButton: UIButton!
     @IBOutlet weak var commentsLabel: UILabel!
+    
+    let disposeBag = DisposeBag()
     
     static let identifier = "RedditListViewCell"
     

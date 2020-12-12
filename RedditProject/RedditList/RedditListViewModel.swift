@@ -38,8 +38,13 @@ class RedditListViewModel {
         return _topEntries.count
     }
     
-    private func requestTokenService() {
-        
+    public func deletePost(index: Int) {
+        _topEntries.removeAt(safeIndex: index)
+    }
+}
+
+private extension RedditListViewModel {
+    func requestTokenService() {
         _redditService
             .requestToken()
             .observeOn(MainScheduler.instance)
@@ -51,7 +56,7 @@ class RedditListViewModel {
             .disposed(by: _disposeBag)
     }
     
-    private func requestTopEntries() {
+    func requestTopEntries() {
         RedditService.shared
             .getTopEntries()
             .observeOn(MainScheduler.instance)
@@ -61,6 +66,4 @@ class RedditListViewModel {
             })
             .disposed(by: self._disposeBag)
     }
-    
-    
 }
