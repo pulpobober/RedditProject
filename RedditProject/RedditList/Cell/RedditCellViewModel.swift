@@ -23,10 +23,13 @@ class RedditListCellViewModel {
         return redditEntrie.visited
     }
     
-    var date: Date {
-        //TODO: Hacerlo bien con Int
+    var date: String {
         let timeInterval = TimeInterval(redditEntrie.created)
-        return Date(timeIntervalSince1970: timeInterval)
+        let postDate = Date(timeIntervalSince1970: timeInterval)
+        let nowDate = Date()
+        let diffComponents = Calendar.current.dateComponents([.hour], from: postDate, to: nowDate)
+        let hoursAgo = diffComponents.hour ?? 0
+        return "\(hoursAgo) hours ago"
     }
     
     var title: String {
