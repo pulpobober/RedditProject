@@ -98,8 +98,9 @@ private extension RedditListViewCell {
     }
     
     func prepareDismissButton() {
-        //TODO: Imagen dismiss
-//                dismissButton.setImage(<#T##image: UIImage?##UIImage?#>, for: <#T##UIControl.State#>)
+        let image = UIImage(systemName: "xmark.circle")?.withTintColor(.orange, renderingMode: .alwaysOriginal)
+        dismissButton.setImage(image, for: .normal)
+        dismissButton.titleEdgeInsets = UIEdgeInsets(top: 0, left: 5, bottom: 0, right: 0)
         dismissButton.setTitleColor(.white, for: .normal)
         dismissButton.titleLabel?.font = UIFont.systemFont(ofSize: 12, weight: .medium)
     }
