@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jlc-DR-8fY">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2wa-dm-00a">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -23,7 +23,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mv5-up-tQR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-926" y="84"/>
+            <point key="canvasLocation" x="1812" y="-48"/>
         </scene>
         <!--Reddit List View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -133,6 +133,7 @@
                                             <outlet property="postImage" destination="L9v-38-1Sa" id="hGb-Yb-eQL"/>
                                             <outlet property="titleLabel" destination="iRg-Yd-OTJ" id="vnH-LX-wot"/>
                                             <outlet property="unreadStatusView" destination="MjZ-c2-GLz" id="SfC-ue-anz"/>
+                                            <segue destination="TUE-9p-bc0" kind="showDetail" identifier="showDetail" id="vp2-xL-fKd"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -165,12 +166,63 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="101" y="84"/>
+            <point key="canvasLocation" x="2838" y="-48"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="Wbi-C3-b2W">
+            <objects>
+                <viewController id="gQm-Cp-AvB" customClass="DetailViewController" customModule="RedditProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ilU-Z2-l2s">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="L1L-nG-dXY"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="HK4-W7-5Zl"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eYH-gE-31U" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2838" y="642"/>
+        </scene>
+        <!--Split View Controller-->
+        <scene sceneID="hyP-3p-Xs0">
+            <objects>
+                <splitViewController allowDoubleColumnStyle="YES" id="2wa-dm-00a" sceneMemberID="viewController">
+                    <connections>
+                        <segue destination="jlc-DR-8fY" kind="relationship" relationship="masterViewController" id="KJh-rL-14W"/>
+                        <segue destination="TUE-9p-bc0" kind="relationship" relationship="detailViewController" id="Irn-6S-Wyn"/>
+                    </connections>
+                </splitViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Jg-Yq-Fnn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="921" y="349"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="fCC-v4-TU5">
+            <objects>
+                <navigationController id="TUE-9p-bc0" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ssb-Y2-ris">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="gQm-Cp-AvB" kind="relationship" relationship="rootViewController" id="G01-7e-cHB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bTi-mJ-xpm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1812" y="642"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="vp2-xL-fKd"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

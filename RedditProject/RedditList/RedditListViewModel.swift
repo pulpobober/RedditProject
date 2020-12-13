@@ -19,7 +19,7 @@ class RedditListViewModel {
 
     init() {
         reloadTable = _reloadTable
-        requestTokenService()
+        requestTopEntries()
     }
     
     var titleNavigationBar: String {
@@ -48,18 +48,6 @@ class RedditListViewModel {
 }
 
 private extension RedditListViewModel {
-    func requestTokenService() {
-        _redditService
-            .requestToken()
-            .observeOn(MainScheduler.instance)
-            .subscribe(onNext: { [weak self] token in
-                //TODO: Esto?
-                NetworkConfigs.sharedInstance.accessToken = token
-                self?.requestTopEntries()
-            })
-            .disposed(by: _disposeBag)
-    }
-    
     func requestTopEntries() {
         RedditService.shared
             .getTopEntries()

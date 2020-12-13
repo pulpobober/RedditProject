@@ -9,6 +9,7 @@ import Foundation
 import UIKit
 import RxSwift
 
+//TODO: Use this protocol
 protocol RedditServiceProtocol {
     func getTopEntries() -> Observable<[ResultTopEntries]>
     func requestToken() -> Observable<String>
@@ -44,24 +45,34 @@ class RedditService: RedditServiceProtocol {
         request.setValue(token, forHTTPHeaderField: "Authorization")
 
         let task = session.dataTask(with: request, completionHandler: { (data, response, error) in
-            guard let httpResponse = response as? HTTPURLResponse, httpResponse.statusCode == 200 else {
-                //TODO: Si es error 401, volver a pedir el token, con algún retry
+            guard let httpResponse = response as? HTTPURLResponse else {
                 failure?(RedditServerError(message: "Cant connect to the server"))
                 return
             }
             
-            guard let data = data,
-                  let json = try? JSONSerialization.jsonObject(with: data, options: []),
-                  let jsonDic = json as? [String: Any],
-                  let jsonDicData = jsonDic["data"] as? [String: Any],
-                  let childrenDic = jsonDicData["children"] as? [Any],
-                  let jsonModel = try? JSONSerialization.data(withJSONObject: childrenDic),
-                  let redditEntries = try? JSONDecoder.redditDecoder.decode([ResultTopEntries].self, from: jsonModel) else {
-                failure?(RedditServerError(message: "Cant deserialize response from server"))
-                return
+            //TODO Make better
+            if httpResponse.statusCode == 401 {
+                
+                self.requestToken(success: { _ in
+                    self.getTopEntries(success: success, failure: failure)
+                }, failure: failure)
+                
+            } else if httpResponse.statusCode == 200 {
+                guard let data = data,
+                      let json = try? JSONSerialization.jsonObject(with: data, options: []),
+                      let jsonDic = json as? [String: Any],
+                      let jsonDicData = jsonDic["data"] as? [String: Any],
+                      let childrenDic = jsonDicData["children"] as? [Any],
+                      let jsonModel = try? JSONSerialization.data(withJSONObject: childrenDic),
+                      let redditEntries = try? JSONDecoder().decode([ResultTopEntries].self, from: jsonModel) else {
+                    failure?(RedditServerError(message: "Cant deserialize response from server"))
+                    return
+                }
+                print(redditEntries)
+                success(redditEntries)
+            } else {
+                failure?(RedditServerError(message: "Cant connect to the server"))
             }
-            print(redditEntries)
-            success(redditEntries)
         })
         task.resume()
     }
@@ -77,7 +88,7 @@ class RedditService: RedditServiceProtocol {
         }
     }
     
-    private func requestToken(success: @escaping (String) -> Void, failure: ((_ error: Error) -> Void)?) {
+    private func requestToken(success: @escaping (String) -> Void, failure: ((_ error: Error) -> Void)?) {       
         let ACCESS_TOKEN_URL = "https://www.reddit.com/api/v1/access_token"
         let GRANT_TYPE = "https://oauth.reddit.com/grants/installed_client"
         let DEVICE_ID = "DO_NOT_TRACK_THIS_DEVICE"
@@ -118,10 +129,13 @@ class RedditService: RedditServiceProtocol {
                 failure?(RedditServerError(message: "Cant deserialize response from server"))
                 return
             }
+            //TODO: 
+            NetworkConfigs.sharedInstance.accessToken = accessToken
             print(accessToken)
             success(accessToken)
             return
         }.resume()
+
     }
 }
 

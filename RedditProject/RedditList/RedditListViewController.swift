@@ -23,6 +23,20 @@ class RedditListViewController: UIViewController {
         bindView()
         bindViewModel()
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showDetail" {
+//            if let indexPath = tableView.indexPathForSelectedRow {
+//                let a = a[indexPath.row]
+                
+//            guard let controller = (segue.destination as? UINavigationController)?.topViewController as? DetailViewController else {
+//                return
+//            }
+//                controller.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem
+//                controller.navigationItem.leftItemsSupplementBackButton = true
+//            }
+        }
+    }
 }
 
 private extension RedditListViewController {
@@ -126,5 +140,20 @@ extension RedditListViewController: UITableViewDelegate, UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
+    
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        //TODO: select cell and change blue icon
+    }
+    
+}
+
+extension RedditListViewController: UISplitViewControllerDelegate {
+    func splitViewController(_ splitViewController: UISplitViewController, collapseSecondary secondaryViewController: UIViewController, onto primaryViewController: UIViewController) -> Bool {
+        return true
+    }
+}
+
+class DetailViewController: UIViewController {
     
 }
