@@ -37,10 +37,8 @@ class RedditListViewCell: UITableViewCell {
     }
     
     func bindViewModel(viewModel: RedditListCellViewModel) {
-        configureCell()
         authorLabel.text = viewModel.author
         unreadStatusView.isHidden = viewModel.visited
-        //TODO date
         dateLabel.text = "\(viewModel.date)"
         titleLabel.text = viewModel.title
         postImage.sd_setImage(with: viewModel.thumbURL, completed: nil)

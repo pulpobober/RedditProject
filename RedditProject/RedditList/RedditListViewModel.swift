@@ -30,20 +30,24 @@ class RedditListViewModel {
         return "Dismiss All"
     }
     
-    public func getRedditEntrie(index: Int) -> RedditEntrie? {
+    func getRedditEntrie(index: Int) -> RedditEntrie? {
         return _topEntries[safe: index]?.data
     }
     
-    public func numberOfRows() -> Int {
+    func numberOfRows() -> Int {
         return _topEntries.count
     }
     
-    public func deletePost(index: Int) {
+    func deletePost(index: Int) {
         _topEntries.removeAt(safeIndex: index)
     }
     
-    public func deleteAllPosts() {
+    func deleteAllPosts() {
         _topEntries.removeAll()
+    }
+    
+    func getRedditDetailsViewModel(redditEntrie: RedditEntrie) -> RedditDetailsViewModel {
+        return RedditDetailsViewModel(redditEntrie: redditEntrie)
     }
 }
 

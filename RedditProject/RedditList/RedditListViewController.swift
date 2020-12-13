@@ -12,7 +12,6 @@ import RxCocoa
 class RedditListViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
-    
     @IBOutlet weak var dismissAllButton: UIButton!
     
     private let _disposeBag = DisposeBag()
@@ -26,15 +25,14 @@ class RedditListViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showDetail" {
-//            if let indexPath = tableView.indexPathForSelectedRow {
-//                let a = a[indexPath.row]
-                
-//            guard let controller = (segue.destination as? UINavigationController)?.topViewController as? DetailViewController else {
-//                return
-//            }
-//                controller.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem
-//                controller.navigationItem.leftItemsSupplementBackButton = true
-//            }
+            guard let controller = (segue.destination as? UINavigationController)?.topViewController as? RedditDetailsViewController,
+                  let indexPath = tableView.indexPathForSelectedRow,
+                  let redditEntrie = _viewModel.getRedditEntrie(index: indexPath.row) else {
+                return
+            }
+            
+            let viewModel = _viewModel.getRedditDetailsViewModel(redditEntrie: redditEntrie)
+            controller.viewModel = viewModel
         }
     }
 }
@@ -145,15 +143,5 @@ extension RedditListViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         //TODO: select cell and change blue icon
     }
-    
-}
-
-extension RedditListViewController: UISplitViewControllerDelegate {
-    func splitViewController(_ splitViewController: UISplitViewController, collapseSecondary secondaryViewController: UIViewController, onto primaryViewController: UIViewController) -> Bool {
-        return true
-    }
-}
-
-class DetailViewController: UIViewController {
     
 }
