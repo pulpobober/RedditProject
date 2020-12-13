@@ -140,7 +140,7 @@
 		3969D4356DB19BD5207124F893EDEBBC /* BeginWith.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3CF025221D05350DBC0C90C0F49BDD /* BeginWith.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		39C0BC1EDCF32013F4D03E27C6EA8FC0 /* MatcherFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96EC8AE5A6B7E827B858252FE93E298 /* MatcherFunc.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		3A0E2C24BA80BD93CCF6C76124CB526A /* SDWebImageDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = D2E65E98AA7D934A17CB938379DFA6FC /* SDWebImageDefine.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		3A87DC148F8FEC8FF8CA402D7C87C579 /* Pods-RedditProject-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C8201F6AC138656096B015A0FA40B3AB /* Pods-RedditProject-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		3A87DC148F8FEC8FF8CA402D7C87C579 /* Pods-RedditProject-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CCE4ACF21263465A7FA52DECCC0EC3E9 /* Pods-RedditProject-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		3C4B00E8AD47C07F087C497503021E54 /* SDImageAssetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F964B67485CD4557B34EE562C8E76D3 /* SDImageAssetManager.m */; };
 		3D470C8ACFFA5300224F8581B5A335CA /* NopDisposable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78308258BD340F615A82594662D0C164 /* NopDisposable.swift */; };
 		3E58AA1C4B79D48B490F14709B4CB3DA /* Deprecated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97CBAD08C7569D35BC4B9E91B7F8BCB0 /* Deprecated.swift */; };
@@ -251,7 +251,7 @@
 		71391818DB4E8936CF30FDEFA8A1C9C8 /* DSL.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A758B96BAD990F22972C436B5B58721 /* DSL.m */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble -w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		7168A6EA59D61CBEA7EF6C3EA02A6E0E /* ConnectableObservableType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CC106A896025588308BDFDE5F2FA3C /* ConnectableObservableType.swift */; };
 		71F67B438528FA571EEA8040EA51363B /* SDWebImage-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 75D01F17022B88B8053BADBFCF336774 /* SDWebImage-dummy.m */; };
-		721D3BE458A5E9B6A5163F3D7F7FC1BF /* Pods-RedditProjectTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 670F18C8CD9A2921372B23F5D43944BB /* Pods-RedditProjectTests-dummy.m */; };
+		721D3BE458A5E9B6A5163F3D7F7FC1BF /* Pods-RedditProjectTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B4F5C6C12455C4432235934BE305AF19 /* Pods-RedditProjectTests-dummy.m */; };
 		7343A3E113799B3C302AAA1073DE727A /* UISearchController+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF0D6A1240411C1D05D459422E39A0B /* UISearchController+Rx.swift */; };
 		738ABFDF8B0164E3FA5C55E026A469EC /* SDImageAWebPCoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BF57C29DB20957865C319524619CD3C /* SDImageAWebPCoder.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		7395BC4BA93CEAD1F284B963E2E05BA0 /* ConcurrentDispatchQueueScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A673A472E66B2EFB3591ECD181A9A8F8 /* ConcurrentDispatchQueueScheduler.swift */; };
@@ -265,7 +265,6 @@
 		778EE32FB8F0AFAD3EB5C7A5BA131BB2 /* SharedSequence+Operators+arity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF5146F690EDD3BA15503CA234A3005 /* SharedSequence+Operators+arity.swift */; };
 		77D2E30E1BF19BE4316CAF1539F9FB94 /* NSControl+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E801D201570A25D9FC1FABD752CEC4 /* NSControl+Rx.swift */; };
 		78307885BBBE253798DAC669DDB41677 /* RxSearchBarDelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C2B5359DFFB384C9779DDB62B9AAE0 /* RxSearchBarDelegateProxy.swift */; };
-		787BA6DD5847BA80D4D97EC105E1E67F /* Pods-RedditProject-RedditProjectUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 00C28CD873A746DE966F1325A1611DDD /* Pods-RedditProject-RedditProjectUITests-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		7917442371C73057D5EDCB3D02570D2C /* RxPickerViewDataSourceProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7E973B7F0F4AA50D8A1DD0ABA103E6 /* RxPickerViewDataSourceProxy.swift */; };
 		799BE860EB3F97BA8DB3BC0E0520CA49 /* NotificationCenter+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427BACB46B1EA833AE7DBC9E6517A060 /* NotificationCenter+Rx.swift */; };
 		7A7FA5CFBC1A7DF091B3258A37C4ACC1 /* Empty.swift in Sources */ = {isa = PBXBuildFile; fileRef = C570629C8BED49C8E2BD14740FA80E72 /* Empty.swift */; };
@@ -273,7 +272,6 @@
 		7BD33B2F9DB3B8EF9EF058943E9D3F13 /* _RX.m in Sources */ = {isa = PBXBuildFile; fileRef = C010F267A1050E0FF8AC4E7461F4B5E2 /* _RX.m */; };
 		7C794D60A72BADFAC32E257D7C3718F6 /* SDImageTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 67F3CF6BB97C613877BE1F481CF2B35A /* SDImageTransformer.m */; };
 		7CADE8D59B629B225D25E353ADB31EF4 /* UIImage+Transform.h in Headers */ = {isa = PBXBuildFile; fileRef = FDCC407BB38A56ECD52D80957D92C8C0 /* UIImage+Transform.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		7CCB1B27E5B0537DBE9B724D6143E2FF /* Pods-RedditProject-RedditProjectUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4339E69A49886BC9EB7A1D8B981E64AD /* Pods-RedditProject-RedditProjectUITests-dummy.m */; };
 		7CF8B6C05C3C2F7A79093CC026397D89 /* BeCloseTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE24BBED51C44612C474827FA5C7B11 /* BeCloseTo.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		7D49B95BF6309837A33CB29E215CB81F /* RxTableViewDelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7841B41C0C70FA6FED91897CC23C23AB /* RxTableViewDelegateProxy.swift */; };
 		7D8625F887C9BF1795D585C3342DA620 /* Completable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30557AF76AD8361780AB624B5CC27906 /* Completable.swift */; };
@@ -451,7 +449,7 @@
 		D1367152A913ED4666BC14D92AFC9A4B /* RxCollectionViewDataSourceProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A969578DAE96FF41BBA8E4B18C0F4167 /* RxCollectionViewDataSourceProxy.swift */; };
 		D1F4237DC45C6297A6B21F505F8A3AFA /* Throttle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78B36C26E409063BF922398DCE5661B /* Throttle.swift */; };
 		D2006F0840BB3F3ACEE1A0BA8144FBA6 /* UISearchBar+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F723D36723373A7918A1C57971656AD /* UISearchBar+Rx.swift */; };
-		D2026E82C3F9649B47EFEA53B4F7EE0B /* Pods-RedditProjectTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EACE5B940DEE5DCE1D02DFC730F983F3 /* Pods-RedditProjectTests-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D2026E82C3F9649B47EFEA53B4F7EE0B /* Pods-RedditProjectTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6201F6B55D1DD566E59D86E3F33C85AC /* Pods-RedditProjectTests-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		D26A2F44AD21333BBF1FDAB5B9C51FFC /* SharedSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C7438E3D636395C08C34A5E407132E /* SharedSequence.swift */; };
 		D274749F2097BC8FDEAD8ED9A3AA82F3 /* UIImage+Transform.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EEE69FBAB64C91565BB5D92D00BF09 /* UIImage+Transform.m */; };
 		D2B2D61DE9296F48F9D79A088DD79351 /* UIImage+Metadata.h in Headers */ = {isa = PBXBuildFile; fileRef = A086E41564188D5EB7AB4D826C51DAD4 /* UIImage+Metadata.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -504,7 +502,7 @@
 		EE13CB2BCCC39B10415AA932CBCF7961 /* SDImageCacheDefine.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C81D4C089AD20A54FA32B2661C61430 /* SDImageCacheDefine.m */; };
 		EE46E22885D542753DFDF5C39E982897 /* KVORepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51173232950464F8BEA7A189B21715E /* KVORepresentable.swift */; };
 		EE6A6249711684A2922B1C55E1C9AEC5 /* UITabBarItem+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = F273FEF2F21001FAEF61CDA274F4281C /* UITabBarItem+Rx.swift */; };
-		EEADBA5D3AE79C460A646088AB13B158 /* Pods-RedditProject-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 855483225E1C289624F36B1853573143 /* Pods-RedditProject-dummy.m */; };
+		EEADBA5D3AE79C460A646088AB13B158 /* Pods-RedditProject-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CACF7FE6EFCF9CD321D6CE233CEC208F /* Pods-RedditProject-dummy.m */; };
 		EEC5369D26456F348453E6BE4176C391 /* SDImageCoder.h in Headers */ = {isa = PBXBuildFile; fileRef = D15965380675F7A0D18B7B0E4F98F5E2 /* SDImageCoder.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		EFC6995396123B0F5A9B97A1EBE4C8EF /* UISwitch+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2420DB5FA847EDF0E8E05E9F77C1837 /* UISwitch+Rx.swift */; };
 		F0447743E3ED1DB90203886E071D0A2B /* QuickTestSuite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59733739A9FAEDDC4C6FBA5DC75B953C /* QuickTestSuite.swift */; };
@@ -570,26 +568,12 @@
 			remoteGlobalIDString = C82891EAB7293DBEE916B21F57E8474D;
 			remoteInfo = Quick;
 		};
-		76D1DE489C8A12014CA562445090EBF5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4622BFEF3DC16E8BD15EEFC30D4D0084;
-			remoteInfo = RxRelay;
-		};
 		86D6095F4D693BD5CB51438DB854B80B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 4622BFEF3DC16E8BD15EEFC30D4D0084;
 			remoteInfo = RxRelay;
-		};
-		8F36AF9A197383C1E805AEFBE7188604 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 7AD0C6DCDC9CEC8A3C7C10C7FEE07BE6;
-			remoteInfo = RxCocoa;
 		};
 		9707EB3126938A8135960FF50DB33D28 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -619,13 +603,6 @@
 			remoteGlobalIDString = 3847153A6E5EEFB86565BA840768F429;
 			remoteInfo = SDWebImage;
 		};
-		B999F0FEBBEC3AFF1ED7A00DD3CD8489 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = EA9EA43B3B503823EE36C60D9C8A865F;
-			remoteInfo = RxSwift;
-		};
 		BCCB2ED221104C996417791B5BA249B3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
@@ -640,22 +617,13 @@
 			remoteGlobalIDString = 7AD0C6DCDC9CEC8A3C7C10C7FEE07BE6;
 			remoteInfo = RxCocoa;
 		};
-		FEE8E53A183610C1412F159D220F5E41 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 3847153A6E5EEFB86565BA840768F429;
-			remoteInfo = SDWebImage;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0034319259A5346CE600B321237C7223 /* SDAsyncBlockOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDAsyncBlockOperation.h; path = SDWebImage/Private/SDAsyncBlockOperation.h; sourceTree = "<group>"; };
-		00C28CD873A746DE966F1325A1611DDD /* Pods-RedditProject-RedditProjectUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RedditProject-RedditProjectUITests-umbrella.h"; sourceTree = "<group>"; };
 		00C74CF19E5CA1EFAFDFFC991CD53BDA /* Merge.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Merge.swift; path = RxSwift/Observables/Merge.swift; sourceTree = "<group>"; };
 		020075DD819114F526EDA5D3B45AFC43 /* UIImage+MemoryCacheCost.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+MemoryCacheCost.m"; path = "SDWebImage/Core/UIImage+MemoryCacheCost.m"; sourceTree = "<group>"; };
 		022065705E2F6D7F6D8E1DD30D6189C3 /* Nimble.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Nimble.debug.xcconfig; sourceTree = "<group>"; };
-		023588F23D4D37EA715708A37EBD9B8C /* Pods-RedditProjectTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RedditProjectTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		02C2B5359DFFB384C9779DDB62B9AAE0 /* RxSearchBarDelegateProxy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RxSearchBarDelegateProxy.swift; path = RxCocoa/iOS/Proxies/RxSearchBarDelegateProxy.swift; sourceTree = "<group>"; };
 		02CC106A896025588308BDFDE5F2FA3C /* ConnectableObservableType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConnectableObservableType.swift; path = RxSwift/ConnectableObservableType.swift; sourceTree = "<group>"; };
 		039890F731BF1A3F61FD3D865BCE95A3 /* Reduce.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Reduce.swift; path = RxSwift/Observables/Reduce.swift; sourceTree = "<group>"; };
@@ -666,10 +634,12 @@
 		050F5400ECF151F791DB0D55F6D5E72C /* RxCocoa.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RxCocoa.release.xcconfig; sourceTree = "<group>"; };
 		05D776B3D84110A6DFE94706F96985E4 /* SDWebImagePrefetcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImagePrefetcher.m; path = SDWebImage/Core/SDWebImagePrefetcher.m; sourceTree = "<group>"; };
 		05E9C3AAC1146F23BC0F2906155B14FA /* ObservableType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ObservableType.swift; path = RxSwift/ObservableType.swift; sourceTree = "<group>"; };
+		067785F096DA127EBBE38C47F2A13346 /* Pods-RedditProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RedditProject.debug.xcconfig"; sourceTree = "<group>"; };
 		06F324615B9750EDBEDC305F24FF0E3B /* _RXKVOObserver.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = _RXKVOObserver.h; path = RxCocoa/Runtime/include/_RXKVOObserver.h; sourceTree = "<group>"; };
 		0703510F4C932318DF15DB848A24202D /* ExampleHooks.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExampleHooks.swift; path = Sources/Quick/Hooks/ExampleHooks.swift; sourceTree = "<group>"; };
 		082F429E81E8560F72409177C102B597 /* SDImageCachesManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageCachesManager.h; path = SDWebImage/Core/SDImageCachesManager.h; sourceTree = "<group>"; };
 		0877A6088DF6C2D8895C6DF149C56549 /* mach_excServer.c */ = {isa = PBXFileReference; includeInIndex = 1; name = mach_excServer.c; path = Carthage/Checkouts/CwlPreconditionTesting/Sources/CwlMachBadInstructionHandler/mach_excServer.c; sourceTree = "<group>"; };
+		087E1D1CCB3EE972445BD68613AE1CF6 /* Pods-RedditProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RedditProject.release.xcconfig"; sourceTree = "<group>"; };
 		08E760184D6B391A5C3B5BE4D0BA2292 /* ControlEvent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ControlEvent.swift; path = RxCocoa/Traits/ControlEvent.swift; sourceTree = "<group>"; };
 		09BD9076BC67172499695F87D10C0035 /* SDAssociatedObject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDAssociatedObject.m; path = SDWebImage/Private/SDAssociatedObject.m; sourceTree = "<group>"; };
 		09D93FB158F040C06C69993B33F62DFB /* UITableView+Rx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UITableView+Rx.swift"; path = "RxCocoa/iOS/UITableView+Rx.swift"; sourceTree = "<group>"; };
@@ -809,9 +779,7 @@
 		40EBB82321A2E4A6C7B3BC68C5A954CC /* BeNil.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeNil.swift; path = Sources/Nimble/Matchers/BeNil.swift; sourceTree = "<group>"; };
 		4232BCA050086BB9E1972898C673F7AF /* ExpectationMessage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpectationMessage.swift; path = Sources/Nimble/ExpectationMessage.swift; sourceTree = "<group>"; };
 		427BACB46B1EA833AE7DBC9E6517A060 /* NotificationCenter+Rx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NotificationCenter+Rx.swift"; path = "RxCocoa/Foundation/NotificationCenter+Rx.swift"; sourceTree = "<group>"; };
-		4339E69A49886BC9EB7A1D8B981E64AD /* Pods-RedditProject-RedditProjectUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RedditProject-RedditProjectUITests-dummy.m"; sourceTree = "<group>"; };
 		43FB5857BE802CEED9E4F011922873AD /* PrimitiveSequence.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PrimitiveSequence.swift; path = RxSwift/Traits/PrimitiveSequence.swift; sourceTree = "<group>"; };
-		441AE35C4795C0559CE430102E0CBE13 /* Pods-RedditProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RedditProjectTests.release.xcconfig"; sourceTree = "<group>"; };
 		44597D32569BD73B520490A9CB67B5FE /* Contain.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Contain.swift; path = Sources/Nimble/Matchers/Contain.swift; sourceTree = "<group>"; };
 		447BDCB3D9B9603B4ACC01B6CAFF00D5 /* SDAnimatedImageRep.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDAnimatedImageRep.m; path = SDWebImage/Core/SDAnimatedImageRep.m; sourceTree = "<group>"; };
 		450C20900E85BE553E57EF8D8CEE144E /* SDWebImageDownloaderConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageDownloaderConfig.h; path = SDWebImage/Core/SDWebImageDownloaderConfig.h; sourceTree = "<group>"; };
@@ -838,14 +806,13 @@
 		4FB45EAB3F04CED7152AB49C83D29A32 /* SerialDispatchQueueScheduler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SerialDispatchQueueScheduler.swift; path = RxSwift/Schedulers/SerialDispatchQueueScheduler.swift; sourceTree = "<group>"; };
 		4FFC31651A182DBD80DCF089C88ABDCA /* String+C99ExtendedIdentifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+C99ExtendedIdentifier.swift"; path = "Sources/Quick/String+C99ExtendedIdentifier.swift"; sourceTree = "<group>"; };
 		508FB83F0F63691E4E2CA2AEA7E3B6C1 /* RxTabBarDelegateProxy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RxTabBarDelegateProxy.swift; path = RxCocoa/iOS/Proxies/RxTabBarDelegateProxy.swift; sourceTree = "<group>"; };
+		51003B51E0D816FFA4ECAA24FD7DC729 /* Pods-RedditProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RedditProjectTests.release.xcconfig"; sourceTree = "<group>"; };
 		513A20AD09D3A9B43B55953BD30294B8 /* Filter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Filter.swift; path = Sources/Quick/Filter.swift; sourceTree = "<group>"; };
 		51DDB1EE76FC56966BC1E5EEBAA4A3BE /* SDWebImageDownloaderOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageDownloaderOperation.h; path = SDWebImage/Core/SDWebImageDownloaderOperation.h; sourceTree = "<group>"; };
 		527941882C8BFAF32C341E630F89CEAE /* NSImage+Compatibility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSImage+Compatibility.h"; path = "SDWebImage/Core/NSImage+Compatibility.h"; sourceTree = "<group>"; };
 		5423254B278613F0EE0D95B29134A104 /* RxNavigationControllerDelegateProxy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RxNavigationControllerDelegateProxy.swift; path = RxCocoa/iOS/Proxies/RxNavigationControllerDelegateProxy.swift; sourceTree = "<group>"; };
-		5455B541D695FBD9973DF3CEE638213D /* Pods-RedditProject-RedditProjectUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-RedditProject-RedditProjectUITests.modulemap"; sourceTree = "<group>"; };
 		5474940D102363A202ACD5FCDB66E496 /* SDWebImageDownloaderConfig.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageDownloaderConfig.m; path = SDWebImage/Core/SDWebImageDownloaderConfig.m; sourceTree = "<group>"; };
 		54D6D8126D7EF4AE83497179FF7ECED6 /* UIProgressView+Rx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIProgressView+Rx.swift"; path = "RxCocoa/iOS/UIProgressView+Rx.swift"; sourceTree = "<group>"; };
-		55944A63F58D2AAF58F291843A4B06ED /* Pods-RedditProjectTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RedditProjectTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		55A3B164F9E57E7BFAF840DFD498FF51 /* KeyPathBinder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeyPathBinder.swift; path = RxCocoa/Common/KeyPathBinder.swift; sourceTree = "<group>"; };
 		55E801D201570A25D9FC1FABD752CEC4 /* NSControl+Rx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSControl+Rx.swift"; path = "RxCocoa/macOS/NSControl+Rx.swift"; sourceTree = "<group>"; };
 		565643E9D9FADF85288F5129F90B2F97 /* CombineLatest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CombineLatest.swift; path = RxSwift/Observables/CombineLatest.swift; sourceTree = "<group>"; };
@@ -857,6 +824,7 @@
 		59733739A9FAEDDC4C6FBA5DC75B953C /* QuickTestSuite.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QuickTestSuite.swift; path = Sources/Quick/QuickTestSuite.swift; sourceTree = "<group>"; };
 		59BFDD109397080B4CE84D00DCAA5E23 /* Driver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Driver.swift; path = RxCocoa/Traits/Driver/Driver.swift; sourceTree = "<group>"; };
 		59E05BCCAEAC563E4DA4BCB8E7506978 /* DefaultIfEmpty.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DefaultIfEmpty.swift; path = RxSwift/Observables/DefaultIfEmpty.swift; sourceTree = "<group>"; };
+		5A4E4C94035DF37FFBBE148AC6F96ED5 /* Pods-RedditProjectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RedditProjectTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5A5AC13205FD7E4B591A564E45267F7D /* SDAnimatedImageRep.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDAnimatedImageRep.h; path = SDWebImage/Core/SDAnimatedImageRep.h; sourceTree = "<group>"; };
 		5B944F16980B554D752DC3DBAF3E7FFD /* UIImage+ForceDecode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+ForceDecode.h"; path = "SDWebImage/Core/UIImage+ForceDecode.h"; sourceTree = "<group>"; };
 		5B97C6D658CB89B074DD500BB799A947 /* DelegateProxy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DelegateProxy.swift; path = RxCocoa/Common/DelegateProxy.swift; sourceTree = "<group>"; };
@@ -878,11 +846,12 @@
 		608B37AB6055DF1522ADB4E7A27DD4B1 /* Nimble-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Nimble-prefix.pch"; sourceTree = "<group>"; };
 		608C8B241F33CE2EFA4ECD6C5B914D66 /* RxSearchControllerDelegateProxy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RxSearchControllerDelegateProxy.swift; path = RxCocoa/iOS/Proxies/RxSearchControllerDelegateProxy.swift; sourceTree = "<group>"; };
 		6098E5FF3D3E011BD81A04FA2416FE25 /* Platform.Darwin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Platform.Darwin.swift; path = Platform/Platform.Darwin.swift; sourceTree = "<group>"; };
+		6201F6B55D1DD566E59D86E3F33C85AC /* Pods-RedditProjectTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RedditProjectTests-umbrella.h"; sourceTree = "<group>"; };
 		6220DD63A79C00B08BF0AEF63F7FD7F8 /* Debounce.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Debounce.swift; path = RxSwift/Observables/Debounce.swift; sourceTree = "<group>"; };
 		626272E5C8A5DCE20011AB72512EC9B6 /* XCTestSuite+QuickTestSuiteBuilder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "XCTestSuite+QuickTestSuiteBuilder.m"; path = "Sources/QuickObjectiveC/XCTestSuite+QuickTestSuiteBuilder.m"; sourceTree = "<group>"; };
+		62FC601CE2F75F26D28A96359699E65E /* Pods-RedditProjectTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-RedditProjectTests.modulemap"; sourceTree = "<group>"; };
 		6363F2E233E08B2AF9F44540F245D279 /* SDWebImageDownloaderRequestModifier.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageDownloaderRequestModifier.m; path = SDWebImage/Core/SDWebImageDownloaderRequestModifier.m; sourceTree = "<group>"; };
 		6564A5CFAEEF8D92CA2712187508C3D8 /* MatcherProtocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MatcherProtocols.swift; path = Sources/Nimble/Matchers/MatcherProtocols.swift; sourceTree = "<group>"; };
-		670F18C8CD9A2921372B23F5D43944BB /* Pods-RedditProjectTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RedditProjectTests-dummy.m"; sourceTree = "<group>"; };
 		678DEC57880A43272FF1268AB940863B /* AtomicInt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AtomicInt.swift; path = Platform/AtomicInt.swift; sourceTree = "<group>"; };
 		67F3CF6BB97C613877BE1F481CF2B35A /* SDImageTransformer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageTransformer.m; path = SDWebImage/Core/SDImageTransformer.m; sourceTree = "<group>"; };
 		6802BF8B46FE0241AAC56CA77EC3EAC6 /* NSBezierPath+SDRoundedCorners.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSBezierPath+SDRoundedCorners.h"; path = "SDWebImage/Private/NSBezierPath+SDRoundedCorners.h"; sourceTree = "<group>"; };
@@ -904,7 +873,6 @@
 		6EF5304EF93DE4861DF9AA04178546CE /* SDImageFrame.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageFrame.m; path = SDWebImage/Core/SDImageFrame.m; sourceTree = "<group>"; };
 		6FE24BBED51C44612C474827FA5C7B11 /* BeCloseTo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeCloseTo.swift; path = Sources/Nimble/Matchers/BeCloseTo.swift; sourceTree = "<group>"; };
 		70A5BB7F50FC23924D1F5AA0DF30F4BD /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+WebCacheOperation.m"; path = "SDWebImage/Core/UIView+WebCacheOperation.m"; sourceTree = "<group>"; };
-		70C50C1D74CE27ADD4F6FFFACCB23616 /* Pods-RedditProject.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-RedditProject.modulemap"; sourceTree = "<group>"; };
 		70FE66D38478DF844133B12CB6B3F1CE /* Deferred.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Deferred.swift; path = RxSwift/Observables/Deferred.swift; sourceTree = "<group>"; };
 		7139EB384511C4447D84891EC2F41086 /* mach_excServer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mach_excServer.h; path = Carthage/Checkouts/CwlPreconditionTesting/Sources/CwlMachBadInstructionHandler/mach_excServer.h; sourceTree = "<group>"; };
 		714D46CDB0BC60406AEC84D156EA8E29 /* SDAnimatedImagePlayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDAnimatedImagePlayer.h; path = SDWebImage/Core/SDAnimatedImagePlayer.h; sourceTree = "<group>"; };
@@ -933,7 +901,6 @@
 		7E1990A606C4819258D22D4D15268EE5 /* RxCocoa-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RxCocoa-dummy.m"; sourceTree = "<group>"; };
 		7E253905A7221CD30069C89B9ECB1F2F /* NSObject+Rx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSObject+Rx.swift"; path = "RxCocoa/Foundation/NSObject+Rx.swift"; sourceTree = "<group>"; };
 		7E4A2A255446801A3B7AAA9FD63C7C53 /* DelegateProxyType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DelegateProxyType.swift; path = RxCocoa/Common/DelegateProxyType.swift; sourceTree = "<group>"; };
-		7F7182722749C4D324F1A0B124A08E41 /* Pods-RedditProjectTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-RedditProjectTests.modulemap"; sourceTree = "<group>"; };
 		7F723D36723373A7918A1C57971656AD /* UISearchBar+Rx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UISearchBar+Rx.swift"; path = "RxCocoa/iOS/UISearchBar+Rx.swift"; sourceTree = "<group>"; };
 		7F9A815410318B7F35029B6EB6735F11 /* RxCocoaObjCRuntimeError+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "RxCocoaObjCRuntimeError+Extensions.swift"; path = "RxCocoa/Common/RxCocoaObjCRuntimeError+Extensions.swift"; sourceTree = "<group>"; };
 		804546185AD666A57C4DABC62F907684 /* QuickConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QuickConfiguration.swift; path = Sources/Quick/Configuration/QuickConfiguration.swift; sourceTree = "<group>"; };
@@ -946,7 +913,6 @@
 		84229CE6589AEB7B32C14D94C034CCB4 /* RxPickerViewDelegateProxy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RxPickerViewDelegateProxy.swift; path = RxCocoa/iOS/Proxies/RxPickerViewDelegateProxy.swift; sourceTree = "<group>"; };
 		84BFB7E58BBDC08547A642778F3FA14C /* SDWebImageTransition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageTransition.m; path = SDWebImage/Core/SDWebImageTransition.m; sourceTree = "<group>"; };
 		84FA49D3E89E5DC88D6E0FF8D7789776 /* DSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DSL.swift; path = Sources/Quick/DSL/DSL.swift; sourceTree = "<group>"; };
-		855483225E1C289624F36B1853573143 /* Pods-RedditProject-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RedditProject-dummy.m"; sourceTree = "<group>"; };
 		85F7BB3314A4909949769FB49405691C /* QuickTestObservation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QuickTestObservation.swift; path = Sources/Quick/QuickTestObservation.swift; sourceTree = "<group>"; };
 		860E905E251129FEC469CBA8E79FDF0E /* SDDiskCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDDiskCache.h; path = SDWebImage/Core/SDDiskCache.h; sourceTree = "<group>"; };
 		8617DB1A32C703A10F8E82F0EA62AB92 /* Quick.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Quick.modulemap; sourceTree = "<group>"; };
@@ -997,7 +963,6 @@
 		979E404A81B951B2118417C3399F5E32 /* CwlCatchException.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CwlCatchException.h; path = Carthage/Checkouts/CwlCatchException/Sources/CwlCatchExceptionSupport/include/CwlCatchException.h; sourceTree = "<group>"; };
 		97CBAD08C7569D35BC4B9E91B7F8BCB0 /* Deprecated.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Deprecated.swift; path = RxCocoa/Deprecated.swift; sourceTree = "<group>"; };
 		9824EAB9EAC2FAA76E05CADB55B58E91 /* SingleAssignmentDisposable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SingleAssignmentDisposable.swift; path = RxSwift/Disposables/SingleAssignmentDisposable.swift; sourceTree = "<group>"; };
-		9836CF53DE4F2A2D9172CD732854B99E /* Pods-RedditProject-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RedditProject-acknowledgements.markdown"; sourceTree = "<group>"; };
 		98ABF2E1BBACFC3B7BCB7ED1549EE6F9 /* AsSingle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AsSingle.swift; path = RxSwift/Observables/AsSingle.swift; sourceTree = "<group>"; };
 		99666BBA04595617EB31A9D18DD10B3F /* SerialDisposable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SerialDisposable.swift; path = RxSwift/Disposables/SerialDisposable.swift; sourceTree = "<group>"; };
 		999B0A34342A095FAD5FDDF24076FDCA /* SDWebImageDownloaderDecryptor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageDownloaderDecryptor.m; path = SDWebImage/Core/SDWebImageDownloaderDecryptor.m; sourceTree = "<group>"; };
@@ -1043,9 +1008,7 @@
 		AD88B96BED00ADC732669419A9CFE80E /* ConcurrentMainScheduler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConcurrentMainScheduler.swift; path = RxSwift/Schedulers/ConcurrentMainScheduler.swift; sourceTree = "<group>"; };
 		AD920E7A317C0210445B17CC99E13143 /* HaveCount.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HaveCount.swift; path = Sources/Nimble/Matchers/HaveCount.swift; sourceTree = "<group>"; };
 		ADA19DD1DEEE62AEA87DC3D8DB8EA2D2 /* Buffer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Buffer.swift; path = RxSwift/Observables/Buffer.swift; sourceTree = "<group>"; };
-		AE1D441E3F985C8EFBB5C3E1F8C6315A /* libPods-RedditProject-RedditProjectUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-RedditProject-RedditProjectUITests.a"; path = "libPods-RedditProject-RedditProjectUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF11B0C22CD6F48E89483EB500FC4DC6 /* InfiniteSequence.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InfiniteSequence.swift; path = Platform/DataStructures/InfiniteSequence.swift; sourceTree = "<group>"; };
-		AF43E602F3321B4B5C1BEA9F40328F10 /* Pods-RedditProject-RedditProjectUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RedditProject-RedditProjectUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		AFB90042EB0C3DAD068AACE28FCF4B10 /* GroupBy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GroupBy.swift; path = RxSwift/Observables/GroupBy.swift; sourceTree = "<group>"; };
 		AFC840008FC96CAB323E57E59A3FC5A4 /* PublishSubject.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PublishSubject.swift; path = RxSwift/Subjects/PublishSubject.swift; sourceTree = "<group>"; };
 		B0414E2750E3A3FE26BDBAC5EDE0AD0C /* Bag+Rx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bag+Rx.swift"; path = "RxSwift/Extensions/Bag+Rx.swift"; sourceTree = "<group>"; };
@@ -1057,8 +1020,8 @@
 		B1C2A6B4B84064D05BFED27A2EA4574F /* ScheduledItemType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ScheduledItemType.swift; path = RxSwift/Schedulers/Internal/ScheduledItemType.swift; sourceTree = "<group>"; };
 		B2408A90AAE4726BCFB13FDCBF7D0297 /* QuickConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QuickConfiguration.h; path = Sources/QuickObjectiveC/Configuration/QuickConfiguration.h; sourceTree = "<group>"; };
 		B30DF87497712C8C5D4F60C1F3D34888 /* UIImageView+WebCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+WebCache.m"; path = "SDWebImage/Core/UIImageView+WebCache.m"; sourceTree = "<group>"; };
-		B396E375BB147861FCBEC7EDC9429496 /* Pods-RedditProjectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RedditProjectTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B4CF8F5B66EF7BED9B537CFAC7736106 /* RxTextViewDelegateProxy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RxTextViewDelegateProxy.swift; path = RxCocoa/iOS/Proxies/RxTextViewDelegateProxy.swift; sourceTree = "<group>"; };
+		B4F5C6C12455C4432235934BE305AF19 /* Pods-RedditProjectTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RedditProjectTests-dummy.m"; sourceTree = "<group>"; };
 		B51DF00673A79C2F898E8FE8B00F0429 /* CwlCatchBadInstruction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CwlCatchBadInstruction.swift; path = Carthage/Checkouts/CwlPreconditionTesting/Sources/CwlPreconditionTesting/CwlCatchBadInstruction.swift; sourceTree = "<group>"; };
 		B55F9D28A17BED845437CDD48A431288 /* SubscriptionDisposable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SubscriptionDisposable.swift; path = RxSwift/Disposables/SubscriptionDisposable.swift; sourceTree = "<group>"; };
 		B65B951FBD55BA7E32F0116F70972128 /* BeVoid.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeVoid.swift; path = Sources/Nimble/Matchers/BeVoid.swift; sourceTree = "<group>"; };
@@ -1067,6 +1030,7 @@
 		B72D6C3CAE59A95F2D1213CA9BD36AD3 /* SharedSequence+Operators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SharedSequence+Operators.swift"; path = "RxCocoa/Traits/SharedSequence/SharedSequence+Operators.swift"; sourceTree = "<group>"; };
 		B7EADE6BECF3002BE09BF4FED159C246 /* SDWebImageOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageOperation.m; path = SDWebImage/Core/SDWebImageOperation.m; sourceTree = "<group>"; };
 		B840BF6D3D3B349A9940D4471E4590FB /* SDWebImageDefine.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageDefine.m; path = SDWebImage/Core/SDWebImageDefine.m; sourceTree = "<group>"; };
+		B8842C3424685CAE95ECA1B7F0E1C6B7 /* Pods-RedditProjectTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RedditProjectTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		B8C9F1F4B7BC6C3D72BF98A1479281B7 /* ObservableType+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ObservableType+Extensions.swift"; path = "RxSwift/ObservableType+Extensions.swift"; sourceTree = "<group>"; };
 		B8E77CE42B218DE8266F359733B48123 /* UIImage+MultiFormat.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+MultiFormat.m"; path = "SDWebImage/Core/UIImage+MultiFormat.m"; sourceTree = "<group>"; };
 		BA63D8635052D4A7FFB8D1E036567298 /* SDImageCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageCache.h; path = SDWebImage/Core/SDImageCache.h; sourceTree = "<group>"; };
@@ -1076,11 +1040,11 @@
 		BB4F032FEB3B0248BCADEF461EAA510B /* RefCountDisposable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RefCountDisposable.swift; path = RxSwift/Disposables/RefCountDisposable.swift; sourceTree = "<group>"; };
 		BB730351612808D7DDBC204BAE62CBC0 /* CwlMachBadInstructionHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CwlMachBadInstructionHandler.m; path = Carthage/Checkouts/CwlPreconditionTesting/Sources/CwlMachBadInstructionHandler/CwlMachBadInstructionHandler.m; sourceTree = "<group>"; };
 		BB83F6A233447C52E7AB2E97D85E6E11 /* libPods-RedditProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-RedditProject.a"; path = "libPods-RedditProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BBB010721C6585D08212D5BF618BB74C /* Pods-RedditProject-RedditProjectUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RedditProject-RedditProjectUITests.release.xcconfig"; sourceTree = "<group>"; };
 		BBC2E2EF3F28568842788C34B0B2F046 /* RaisesException.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RaisesException.swift; path = Sources/Nimble/Matchers/RaisesException.swift; sourceTree = "<group>"; };
 		BC056F91E696CB86BECCDF1904603868 /* ObserverType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ObserverType.swift; path = RxSwift/ObserverType.swift; sourceTree = "<group>"; };
 		BC432FD48A5932251F1CAFBC4BF74894 /* libRxCocoa.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libRxCocoa.a; path = libRxCocoa.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC8D8A410519E9B8ABBB397E555CE270 /* HooksPhase.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HooksPhase.swift; path = Sources/Quick/Hooks/HooksPhase.swift; sourceTree = "<group>"; };
+		BC94B2E17E3BD7DE1D7B07E73DF4B50D /* Pods-RedditProject-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RedditProject-acknowledgements.markdown"; sourceTree = "<group>"; };
 		BCFD5C314F12BB38DE3BD7E7DDDC7F4E /* ObserveOn.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ObserveOn.swift; path = RxSwift/Observables/ObserveOn.swift; sourceTree = "<group>"; };
 		BD4271C7D6CDA05F7E80ABDA2F726081 /* UIImage+ForceDecode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+ForceDecode.m"; path = "SDWebImage/Core/UIImage+ForceDecode.m"; sourceTree = "<group>"; };
 		BD60C86EFE243A5F0903D0546C93893C /* TextInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextInput.swift; path = RxCocoa/Common/TextInput.swift; sourceTree = "<group>"; };
@@ -1103,16 +1067,16 @@
 		C68781ECD2AF5B2F4477B617D7BB4805 /* SDWebImage-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SDWebImage-prefix.pch"; sourceTree = "<group>"; };
 		C6DE8500550A618C5CE019225E74FBBC /* SDImageAPNGCoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageAPNGCoder.m; path = SDWebImage/Core/SDImageAPNGCoder.m; sourceTree = "<group>"; };
 		C7AA3F7D98731B2E90F82AF28B982B48 /* SDDeviceHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDDeviceHelper.m; path = SDWebImage/Private/SDDeviceHelper.m; sourceTree = "<group>"; };
-		C8201F6AC138656096B015A0FA40B3AB /* Pods-RedditProject-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RedditProject-umbrella.h"; sourceTree = "<group>"; };
 		C8827D601E6B13AAAD4E3AB02615B63D /* Using.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Using.swift; path = RxSwift/Observables/Using.swift; sourceTree = "<group>"; };
 		C8E1136C141B326CD9205D4567AA5197 /* UIStepper+Rx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIStepper+Rx.swift"; path = "RxCocoa/iOS/UIStepper+Rx.swift"; sourceTree = "<group>"; };
 		C90A7CC8535F798A469A3D0524628E6F /* SDImageLoadersManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageLoadersManager.m; path = SDWebImage/Core/SDImageLoadersManager.m; sourceTree = "<group>"; };
 		C9C124ECF27F1FC3C3AE3A99C27CDC08 /* SatisfyAllOf.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SatisfyAllOf.swift; path = Sources/Nimble/Matchers/SatisfyAllOf.swift; sourceTree = "<group>"; };
 		C9D53DCDE2AF7A1803AFDBE9D7DE68DD /* PriorityQueue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PriorityQueue.swift; path = Platform/DataStructures/PriorityQueue.swift; sourceTree = "<group>"; };
+		CACF7FE6EFCF9CD321D6CE233CEC208F /* Pods-RedditProject-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RedditProject-dummy.m"; sourceTree = "<group>"; };
 		CB4BD2DA27CCC4DE8F03B95D8DA585EC /* SDImageIOCoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageIOCoder.h; path = SDWebImage/Core/SDImageIOCoder.h; sourceTree = "<group>"; };
 		CBE455866732F6205D725568FC371EA5 /* SDAsyncBlockOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDAsyncBlockOperation.m; path = SDWebImage/Private/SDAsyncBlockOperation.m; sourceTree = "<group>"; };
-		CC3E2672E489B26DE388B126D461C763 /* Pods-RedditProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RedditProject.debug.xcconfig"; sourceTree = "<group>"; };
 		CCDCEC3854C81CE6AF171FCD0079B679 /* UIButton+WebCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+WebCache.h"; path = "SDWebImage/Core/UIButton+WebCache.h"; sourceTree = "<group>"; };
+		CCE4ACF21263465A7FA52DECCC0EC3E9 /* Pods-RedditProject-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RedditProject-umbrella.h"; sourceTree = "<group>"; };
 		CD4329B28B085A3E1BC0E6C21EA5B77E /* SDInternalMacros.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDInternalMacros.m; path = SDWebImage/Private/SDInternalMacros.m; sourceTree = "<group>"; };
 		CDC3BFE3B39AA4D94BE1CC83C0F76557 /* CwlCatchException.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CwlCatchException.m; path = Carthage/Checkouts/CwlCatchException/Sources/CwlCatchExceptionSupport/CwlCatchException.m; sourceTree = "<group>"; };
 		CF36B177375A9856A8F1711BA1882BA2 /* ScheduledDisposable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ScheduledDisposable.swift; path = RxSwift/Disposables/ScheduledDisposable.swift; sourceTree = "<group>"; };
@@ -1121,6 +1085,7 @@
 		CFCD5D0DE650BF9A2954FD8D1A63E93B /* SDAnimatedImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDAnimatedImage.h; path = SDWebImage/Core/SDAnimatedImage.h; sourceTree = "<group>"; };
 		D06DE46C1042A29892C11DE763DF5A41 /* UIRefreshControl+Rx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIRefreshControl+Rx.swift"; path = "RxCocoa/iOS/UIRefreshControl+Rx.swift"; sourceTree = "<group>"; };
 		D0B85C8438D34EBADAA2399BCCE19DF3 /* Reactive.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Reactive.swift; path = RxSwift/Reactive.swift; sourceTree = "<group>"; };
+		D0DF8FBA1782EA2E4988332651BE4D39 /* Pods-RedditProjectTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RedditProjectTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		D12E61264400984B7704621F2AA72DCF /* VirtualTimeScheduler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VirtualTimeScheduler.swift; path = RxSwift/Schedulers/VirtualTimeScheduler.swift; sourceTree = "<group>"; };
 		D15965380675F7A0D18B7B0E4F98F5E2 /* SDImageCoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageCoder.h; path = SDWebImage/Core/SDImageCoder.h; sourceTree = "<group>"; };
 		D15EA2B71837C704C7843CEF1FD29CAF /* VirtualTimeConverterType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VirtualTimeConverterType.swift; path = RxSwift/Schedulers/VirtualTimeConverterType.swift; sourceTree = "<group>"; };
@@ -1157,13 +1122,13 @@
 		DCD6098B4D85330E0E367E23206E270C /* SDImageLoader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageLoader.h; path = SDWebImage/Core/SDImageLoader.h; sourceTree = "<group>"; };
 		DD3CF025221D05350DBC0C90C0F49BDD /* BeginWith.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeginWith.swift; path = Sources/Nimble/Matchers/BeginWith.swift; sourceTree = "<group>"; };
 		DD5B0CBCEB5A54409FD19A4DA701328D /* ImmediateSchedulerType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImmediateSchedulerType.swift; path = RxSwift/ImmediateSchedulerType.swift; sourceTree = "<group>"; };
+		DE632651172A7266FE31F96524DCC597 /* Pods-RedditProject.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-RedditProject.modulemap"; sourceTree = "<group>"; };
 		DE9E8DB52431A3B19CEEF8B2D1463FF3 /* NSImageView+Rx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSImageView+Rx.swift"; path = "RxCocoa/macOS/NSImageView+Rx.swift"; sourceTree = "<group>"; };
 		DEBC0DA66C23405EF1CCEEBF8AE5C44A /* NimbleXCTestHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NimbleXCTestHandler.swift; path = Sources/Nimble/Adapters/NimbleXCTestHandler.swift; sourceTree = "<group>"; };
 		DEBD65254869B94D84C99783E32F7562 /* RxCollectionViewReactiveArrayDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RxCollectionViewReactiveArrayDataSource.swift; path = RxCocoa/iOS/DataSources/RxCollectionViewReactiveArrayDataSource.swift; sourceTree = "<group>"; };
 		DECEC6C50E9F4883B3386174155CDE6C /* PublishRelay.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PublishRelay.swift; path = RxRelay/PublishRelay.swift; sourceTree = "<group>"; };
 		DF2DFC6F3C56261CE6C42E61662EE8E1 /* Nimble.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Nimble.h; path = Sources/Nimble/Nimble.h; sourceTree = "<group>"; };
 		DFEAACB0633049087D4500EE7E6BC7B8 /* Signal+Subscription.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Signal+Subscription.swift"; path = "RxCocoa/Traits/Signal/Signal+Subscription.swift"; sourceTree = "<group>"; };
-		E13AA828EEC27EC9DDE7820017927051 /* Pods-RedditProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RedditProject.release.xcconfig"; sourceTree = "<group>"; };
 		E13D6166FC7482739EFF480DEDF5CA46 /* World+DSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "World+DSL.swift"; path = "Sources/Quick/DSL/World+DSL.swift"; sourceTree = "<group>"; };
 		E256E1C753669FFFD529F5A0FA4CEC22 /* SDWebImageCacheKeyFilter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageCacheKeyFilter.m; path = SDWebImage/Core/SDWebImageCacheKeyFilter.m; sourceTree = "<group>"; };
 		E2C9C96BE232EAE4910F4D01C4E808F7 /* RetryWhen.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RetryWhen.swift; path = RxSwift/Observables/RetryWhen.swift; sourceTree = "<group>"; };
@@ -1189,14 +1154,12 @@
 		E96BD70F917D7BE72F737BF0105F4B69 /* HistoricalSchedulerTimeConverter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HistoricalSchedulerTimeConverter.swift; path = RxSwift/Schedulers/HistoricalSchedulerTimeConverter.swift; sourceTree = "<group>"; };
 		E96EC8AE5A6B7E827B858252FE93E298 /* MatcherFunc.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MatcherFunc.swift; path = Sources/Nimble/Matchers/MatcherFunc.swift; sourceTree = "<group>"; };
 		EA7522070AE04E1E83545D8CADDC91D3 /* SDWebImageIndicator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageIndicator.h; path = SDWebImage/Core/SDWebImageIndicator.h; sourceTree = "<group>"; };
-		EACE5B940DEE5DCE1D02DFC730F983F3 /* Pods-RedditProjectTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RedditProjectTests-umbrella.h"; sourceTree = "<group>"; };
 		EAE28097D6CCA939B7AB04E878564335 /* NMBExpectation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NMBExpectation.swift; path = Sources/Nimble/Adapters/NMBExpectation.swift; sourceTree = "<group>"; };
 		EAF1C6ADD8B64E137F2DDC440D138263 /* Expectation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Expectation.swift; path = Sources/Nimble/Expectation.swift; sourceTree = "<group>"; };
 		EB10315FE89D1335D67461626DCCD02D /* Filter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Filter.swift; path = RxSwift/Observables/Filter.swift; sourceTree = "<group>"; };
 		EB23A4735D16D97F7B5CA7C200DE287F /* RxRelay.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = RxRelay.modulemap; sourceTree = "<group>"; };
 		EB35F20607E03984FAE68265A66199D7 /* NMBStringify.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NMBStringify.m; path = Sources/NimbleObjectiveC/NMBStringify.m; sourceTree = "<group>"; };
 		EB74D9577524191B696DAE2492FA5587 /* Quick-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Quick-prefix.pch"; sourceTree = "<group>"; };
-		EC69BF30D76E6D1907D8549D44D6E091 /* Pods-RedditProject-RedditProjectUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RedditProject-RedditProjectUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		ECA28DDA4B33B044027491804C038E68 /* AssertionDispatcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AssertionDispatcher.swift; path = Sources/Nimble/Adapters/AssertionDispatcher.swift; sourceTree = "<group>"; };
 		ECC13EF1638CF2CCDE3DFB95849FF20C /* ControlEvent+Driver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ControlEvent+Driver.swift"; path = "RxCocoa/Traits/Driver/ControlEvent+Driver.swift"; sourceTree = "<group>"; };
 		EDB3B6B26FEBF1E404E96F087A2167E0 /* Nimble.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Nimble.modulemap; sourceTree = "<group>"; };
@@ -1206,6 +1169,7 @@
 		F238870F23F8B94B0D29D2BBDF42A818 /* BooleanDisposable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BooleanDisposable.swift; path = RxSwift/Disposables/BooleanDisposable.swift; sourceTree = "<group>"; };
 		F273FEF2F21001FAEF61CDA274F4281C /* UITabBarItem+Rx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UITabBarItem+Rx.swift"; path = "RxCocoa/iOS/UITabBarItem+Rx.swift"; sourceTree = "<group>"; };
 		F32DB720E16C23D9A4735B7BADF3EECB /* HistoricalScheduler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HistoricalScheduler.swift; path = RxSwift/Schedulers/HistoricalScheduler.swift; sourceTree = "<group>"; };
+		F3BBFBCCB68280B5A083C2A1B6C99A1B /* Pods-RedditProject-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RedditProject-acknowledgements.plist"; sourceTree = "<group>"; };
 		F411414630CB0873BBBB72BE59F238A9 /* Rx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Rx.swift; path = RxSwift/Rx.swift; sourceTree = "<group>"; };
 		F44AC809034B7192EE35F9AE0EBD653A /* ScheduledItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ScheduledItem.swift; path = RxSwift/Schedulers/Internal/ScheduledItem.swift; sourceTree = "<group>"; };
 		F46D67B5D0C48C766F0D405E9521EEF6 /* PostNotification.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PostNotification.swift; path = Sources/Nimble/Matchers/PostNotification.swift; sourceTree = "<group>"; };
@@ -1219,7 +1183,6 @@
 		F6EC4701D32358CDA63270F1084C11BA /* Errors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Errors.swift; path = Sources/Nimble/Utils/Errors.swift; sourceTree = "<group>"; };
 		F757B377F4439453BD5CC345FA1B138D /* SDWebImageCacheSerializer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageCacheSerializer.m; path = SDWebImage/Core/SDWebImageCacheSerializer.m; sourceTree = "<group>"; };
 		F76048A66191918F9D144C80D5624F69 /* RxSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RxSwift.debug.xcconfig; sourceTree = "<group>"; };
-		F782411630B1ABAA2A63D1925F852F99 /* Pods-RedditProject-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RedditProject-acknowledgements.plist"; sourceTree = "<group>"; };
 		F7F0D770CEE15D27970E8E2F01DD28BD /* Zip+Collection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Zip+Collection.swift"; path = "RxSwift/Observables/Zip+Collection.swift"; sourceTree = "<group>"; };
 		F89ED9B43EAEEAE7E998B96E13884CB9 /* Logging.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Logging.swift; path = RxCocoa/Foundation/Logging.swift; sourceTree = "<group>"; };
 		F8C6F0319051E0C9C7E09B4F54670056 /* DSL+Wait.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DSL+Wait.swift"; path = "Sources/Nimble/DSL+Wait.swift"; sourceTree = "<group>"; };
@@ -1233,7 +1196,6 @@
 		FDCC407BB38A56ECD52D80957D92C8C0 /* UIImage+Transform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Transform.h"; path = "SDWebImage/Core/UIImage+Transform.h"; sourceTree = "<group>"; };
 		FE0DB64414644AACECF61823AA362B72 /* Skip.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Skip.swift; path = RxSwift/Observables/Skip.swift; sourceTree = "<group>"; };
 		FE7C2BCB6F72621B4D5AA7730B741813 /* UIApplication+Rx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIApplication+Rx.swift"; path = "RxCocoa/iOS/UIApplication+Rx.swift"; sourceTree = "<group>"; };
-		FF6D2D7967D871380711D6320A22F177 /* Pods-RedditProject-RedditProjectUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RedditProject-RedditProjectUITests-acknowledgements.plist"; sourceTree = "<group>"; };
 		FF8B264DFE802855D5D67E7CDDABFC3C /* libRxRelay.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libRxRelay.a; path = libRxRelay.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFD03B23B7FBA7B764B2EFF6E2EF7F85 /* SDImageHEICCoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageHEICCoder.h; path = SDWebImage/Core/SDImageHEICCoder.h; sourceTree = "<group>"; };
 		FFE9626D3E43F446BEB79FA4E580DCA5 /* LockOwnerType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LockOwnerType.swift; path = RxSwift/Concurrency/LockOwnerType.swift; sourceTree = "<group>"; };
@@ -1249,13 +1211,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		0AE22D433EF4AD1630B0632008CC93A0 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0E59CE833FBF9BB5B59F6BE7DA2C2345 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1482,21 +1437,6 @@
 			name = Core;
 			sourceTree = "<group>";
 		};
-		504FA4AC3CDE498DCD04F784278FD413 /* Pods-RedditProject-RedditProjectUITests */ = {
-			isa = PBXGroup;
-			children = (
-				5455B541D695FBD9973DF3CEE638213D /* Pods-RedditProject-RedditProjectUITests.modulemap */,
-				AF43E602F3321B4B5C1BEA9F40328F10 /* Pods-RedditProject-RedditProjectUITests-acknowledgements.markdown */,
-				FF6D2D7967D871380711D6320A22F177 /* Pods-RedditProject-RedditProjectUITests-acknowledgements.plist */,
-				4339E69A49886BC9EB7A1D8B981E64AD /* Pods-RedditProject-RedditProjectUITests-dummy.m */,
-				00C28CD873A746DE966F1325A1611DDD /* Pods-RedditProject-RedditProjectUITests-umbrella.h */,
-				EC69BF30D76E6D1907D8549D44D6E091 /* Pods-RedditProject-RedditProjectUITests.debug.xcconfig */,
-				BBB010721C6585D08212D5BF618BB74C /* Pods-RedditProject-RedditProjectUITests.release.xcconfig */,
-			);
-			name = "Pods-RedditProject-RedditProjectUITests";
-			path = "Target Support Files/Pods-RedditProject-RedditProjectUITests";
-			sourceTree = "<group>";
-		};
 		622D87E2561E8BB3D14EF0AE742E924C /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -1564,6 +1504,21 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/RxCocoa";
+			sourceTree = "<group>";
+		};
+		76447C3D6A17461A4085D83539944DF6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BAE263041362D074978BB3B577DF0A05 /* libNimble.a */,
+				BB83F6A233447C52E7AB2E97D85E6E11 /* libPods-RedditProject.a */,
+				74D80A35B37F0D45E661B44073528CD1 /* libPods-RedditProjectTests.a */,
+				0D631E9908483F9525A6B3F36F16CC61 /* libQuick.a */,
+				BC432FD48A5932251F1CAFBC4BF74894 /* libRxCocoa.a */,
+				FF8B264DFE802855D5D67E7CDDABFC3C /* libRxRelay.a */,
+				809C5FAB588354C9BA37DC3EAB8CB45C /* libRxSwift.a */,
+				B0B214D775196BA7CA8E17E53048A493 /* libSDWebImage.a */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		814CAA161582042651F71ACED752C01F /* RxSwift */ = {
@@ -1725,20 +1680,19 @@
 			path = RxSwift;
 			sourceTree = "<group>";
 		};
-		8EDE3733388455C552474C17B9A48744 /* Products */ = {
+		9F4223E34F7AE1E37D0C2A528BDDBDE6 /* Pods-RedditProject */ = {
 			isa = PBXGroup;
 			children = (
-				BAE263041362D074978BB3B577DF0A05 /* libNimble.a */,
-				BB83F6A233447C52E7AB2E97D85E6E11 /* libPods-RedditProject.a */,
-				AE1D441E3F985C8EFBB5C3E1F8C6315A /* libPods-RedditProject-RedditProjectUITests.a */,
-				74D80A35B37F0D45E661B44073528CD1 /* libPods-RedditProjectTests.a */,
-				0D631E9908483F9525A6B3F36F16CC61 /* libQuick.a */,
-				BC432FD48A5932251F1CAFBC4BF74894 /* libRxCocoa.a */,
-				FF8B264DFE802855D5D67E7CDDABFC3C /* libRxRelay.a */,
-				809C5FAB588354C9BA37DC3EAB8CB45C /* libRxSwift.a */,
-				B0B214D775196BA7CA8E17E53048A493 /* libSDWebImage.a */,
+				DE632651172A7266FE31F96524DCC597 /* Pods-RedditProject.modulemap */,
+				BC94B2E17E3BD7DE1D7B07E73DF4B50D /* Pods-RedditProject-acknowledgements.markdown */,
+				F3BBFBCCB68280B5A083C2A1B6C99A1B /* Pods-RedditProject-acknowledgements.plist */,
+				CACF7FE6EFCF9CD321D6CE233CEC208F /* Pods-RedditProject-dummy.m */,
+				CCE4ACF21263465A7FA52DECCC0EC3E9 /* Pods-RedditProject-umbrella.h */,
+				067785F096DA127EBBE38C47F2A13346 /* Pods-RedditProject.debug.xcconfig */,
+				087E1D1CCB3EE972445BD68613AE1CF6 /* Pods-RedditProject.release.xcconfig */,
 			);
-			name = Products;
+			name = "Pods-RedditProject";
+			path = "Target Support Files/Pods-RedditProject";
 			sourceTree = "<group>";
 		};
 		9F5BB42F185131B91AA7C3FAA194EB5F /* Support Files */ = {
@@ -2004,54 +1958,14 @@
 			path = RxCocoa;
 			sourceTree = "<group>";
 		};
-		C51E43DB1F2D6076E8BF5A0A75DF4BF8 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				CCF8502F6B2103A9AEDCC77325811D80 /* Pods-RedditProject */,
-				504FA4AC3CDE498DCD04F784278FD413 /* Pods-RedditProject-RedditProjectUITests */,
-				C7ECC5973C0C0398EA1413C4F70E4343 /* Pods-RedditProjectTests */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		C7ECC5973C0C0398EA1413C4F70E4343 /* Pods-RedditProjectTests */ = {
-			isa = PBXGroup;
-			children = (
-				7F7182722749C4D324F1A0B124A08E41 /* Pods-RedditProjectTests.modulemap */,
-				55944A63F58D2AAF58F291843A4B06ED /* Pods-RedditProjectTests-acknowledgements.markdown */,
-				023588F23D4D37EA715708A37EBD9B8C /* Pods-RedditProjectTests-acknowledgements.plist */,
-				670F18C8CD9A2921372B23F5D43944BB /* Pods-RedditProjectTests-dummy.m */,
-				EACE5B940DEE5DCE1D02DFC730F983F3 /* Pods-RedditProjectTests-umbrella.h */,
-				B396E375BB147861FCBEC7EDC9429496 /* Pods-RedditProjectTests.debug.xcconfig */,
-				441AE35C4795C0559CE430102E0CBE13 /* Pods-RedditProjectTests.release.xcconfig */,
-			);
-			name = "Pods-RedditProjectTests";
-			path = "Target Support Files/Pods-RedditProjectTests";
-			sourceTree = "<group>";
-		};
-		CCF8502F6B2103A9AEDCC77325811D80 /* Pods-RedditProject */ = {
-			isa = PBXGroup;
-			children = (
-				70C50C1D74CE27ADD4F6FFFACCB23616 /* Pods-RedditProject.modulemap */,
-				9836CF53DE4F2A2D9172CD732854B99E /* Pods-RedditProject-acknowledgements.markdown */,
-				F782411630B1ABAA2A63D1925F852F99 /* Pods-RedditProject-acknowledgements.plist */,
-				855483225E1C289624F36B1853573143 /* Pods-RedditProject-dummy.m */,
-				C8201F6AC138656096B015A0FA40B3AB /* Pods-RedditProject-umbrella.h */,
-				CC3E2672E489B26DE388B126D461C763 /* Pods-RedditProject.debug.xcconfig */,
-				E13AA828EEC27EC9DDE7820017927051 /* Pods-RedditProject.release.xcconfig */,
-			);
-			name = "Pods-RedditProject";
-			path = "Target Support Files/Pods-RedditProject";
-			sourceTree = "<group>";
-		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D89477F20FB1DE18A04690586D7808C4 /* Frameworks */,
 				3AAC7F4D1F621988FC8B83D2712F92FC /* Pods */,
-				8EDE3733388455C552474C17B9A48744 /* Products */,
-				C51E43DB1F2D6076E8BF5A0A75DF4BF8 /* Targets Support Files */,
+				76447C3D6A17461A4085D83539944DF6 /* Products */,
+				F7E226AF81E9A7D90E266DE48DFE1215 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -2060,6 +1974,30 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E5C0823BAF9BF051AE276860D35ABE33 /* Pods-RedditProjectTests */ = {
+			isa = PBXGroup;
+			children = (
+				62FC601CE2F75F26D28A96359699E65E /* Pods-RedditProjectTests.modulemap */,
+				D0DF8FBA1782EA2E4988332651BE4D39 /* Pods-RedditProjectTests-acknowledgements.markdown */,
+				B8842C3424685CAE95ECA1B7F0E1C6B7 /* Pods-RedditProjectTests-acknowledgements.plist */,
+				B4F5C6C12455C4432235934BE305AF19 /* Pods-RedditProjectTests-dummy.m */,
+				6201F6B55D1DD566E59D86E3F33C85AC /* Pods-RedditProjectTests-umbrella.h */,
+				5A4E4C94035DF37FFBBE148AC6F96ED5 /* Pods-RedditProjectTests.debug.xcconfig */,
+				51003B51E0D816FFA4ECAA24FD7DC729 /* Pods-RedditProjectTests.release.xcconfig */,
+			);
+			name = "Pods-RedditProjectTests";
+			path = "Target Support Files/Pods-RedditProjectTests";
+			sourceTree = "<group>";
+		};
+		F7E226AF81E9A7D90E266DE48DFE1215 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9F4223E34F7AE1E37D0C2A528BDDBDE6 /* Pods-RedditProject */,
+				E5C0823BAF9BF051AE276860D35ABE33 /* Pods-RedditProjectTests */,
+			);
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
 		FD33234DC9224E69EE48CC3FA00E3AC0 /* Support Files */ = {
@@ -2186,14 +2124,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A87DC148F8FEC8FF8CA402D7C87C579 /* Pods-RedditProject-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BCD607932E0A94495F28D24DABAE5022 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				787BA6DD5847BA80D4D97EC105E1E67F /* Pods-RedditProject-RedditProjectUITests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2360,27 +2290,6 @@
 			productReference = BC432FD48A5932251F1CAFBC4BF74894 /* libRxCocoa.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		C51F783C20A9ECF08F999A3AC19E6855 /* Pods-RedditProject-RedditProjectUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 382051BD7972208A2D8F9207926CDB99 /* Build configuration list for PBXNativeTarget "Pods-RedditProject-RedditProjectUITests" */;
-			buildPhases = (
-				BCD607932E0A94495F28D24DABAE5022 /* Headers */,
-				F2B8E831E85B16FDEF65CA0191299AA2 /* Sources */,
-				0E59CE833FBF9BB5B59F6BE7DA2C2345 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				252927E0F4DE0EDFE347294CFFD9D6B3 /* PBXTargetDependency */,
-				CB0CBBD3AF00DD4714656358F8CED1F4 /* PBXTargetDependency */,
-				F9D16B518DBCD3F03A3B6C86F3371A69 /* PBXTargetDependency */,
-				8425997F4B8CC9CC8D5381FCA5404C9C /* PBXTargetDependency */,
-			);
-			name = "Pods-RedditProject-RedditProjectUITests";
-			productName = "Pods-RedditProject-RedditProjectUITests";
-			productReference = AE1D441E3F985C8EFBB5C3E1F8C6315A /* libPods-RedditProject-RedditProjectUITests.a */;
-			productType = "com.apple.product-type.library.static";
-		};
 		C82891EAB7293DBEE916B21F57E8474D /* Quick */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8D75AF50BD6DBD48708B3925AA1F5A14 /* Build configuration list for PBXNativeTarget "Quick" */;
@@ -2435,13 +2344,12 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 8EDE3733388455C552474C17B9A48744 /* Products */;
+			productRefGroup = 76447C3D6A17461A4085D83539944DF6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				6F13695E06195A78EA8A95F8C7ED0D2F /* Nimble */,
 				6044B7A1F08CD61D0E45F04EA3D5B87C /* Pods-RedditProject */,
-				C51F783C20A9ECF08F999A3AC19E6855 /* Pods-RedditProject-RedditProjectUITests */,
 				3F930B9A0B687B42AEF32B979D06602E /* Pods-RedditProjectTests */,
 				C82891EAB7293DBEE916B21F57E8474D /* Quick */,
 				7AD0C6DCDC9CEC8A3C7C10C7FEE07BE6 /* RxCocoa */,
@@ -3023,14 +2931,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F2B8E831E85B16FDEF65CA0191299AA2 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7CCB1B27E5B0537DBE9B724D6143E2FF /* Pods-RedditProject-RedditProjectUITests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		FAFF11D758A74370D0E9A58051D49A4E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -3093,12 +2993,6 @@
 			target = 4622BFEF3DC16E8BD15EEFC30D4D0084 /* RxRelay */;
 			targetProxy = 9707EB3126938A8135960FF50DB33D28 /* PBXContainerItemProxy */;
 		};
-		252927E0F4DE0EDFE347294CFFD9D6B3 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = RxCocoa;
-			target = 7AD0C6DCDC9CEC8A3C7C10C7FEE07BE6 /* RxCocoa */;
-			targetProxy = 8F36AF9A197383C1E805AEFBE7188604 /* PBXContainerItemProxy */;
-		};
 		4A053C937ED2632400EB58542F195E4D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = RxSwift;
@@ -3110,12 +3004,6 @@
 			name = "Pods-RedditProject";
 			target = 6044B7A1F08CD61D0E45F04EA3D5B87C /* Pods-RedditProject */;
 			targetProxy = 099D49BF40CAE1D2049C41221748B956 /* PBXContainerItemProxy */;
-		};
-		8425997F4B8CC9CC8D5381FCA5404C9C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SDWebImage;
-			target = 3847153A6E5EEFB86565BA840768F429 /* SDWebImage */;
-			targetProxy = FEE8E53A183610C1412F159D220F5E41 /* PBXContainerItemProxy */;
 		};
 		895C34C944D6C9B8E7AEB2CA2522157B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -3141,12 +3029,6 @@
 			target = 6F13695E06195A78EA8A95F8C7ED0D2F /* Nimble */;
 			targetProxy = 21DF3C8175C1FFBA90CB4C3E0C6E391B /* PBXContainerItemProxy */;
 		};
-		CB0CBBD3AF00DD4714656358F8CED1F4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = RxRelay;
-			target = 4622BFEF3DC16E8BD15EEFC30D4D0084 /* RxRelay */;
-			targetProxy = 76D1DE489C8A12014CA562445090EBF5 /* PBXContainerItemProxy */;
-		};
 		D163A67C7CC414BFBD97CB7B213DB0C3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SDWebImage;
@@ -3158,12 +3040,6 @@
 			name = RxRelay;
 			target = 4622BFEF3DC16E8BD15EEFC30D4D0084 /* RxRelay */;
 			targetProxy = 86D6095F4D693BD5CB51438DB854B80B /* PBXContainerItemProxy */;
-		};
-		F9D16B518DBCD3F03A3B6C86F3371A69 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = RxSwift;
-			target = EA9EA43B3B503823EE36C60D9C8A865F /* RxSwift */;
-			targetProxy = B999F0FEBBEC3AFF1ED7A00DD3CD8489 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -3381,7 +3257,7 @@
 		};
 		459C03083A0ADC04421F08047B824A50 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 441AE35C4795C0559CE430102E0CBE13 /* Pods-RedditProjectTests.release.xcconfig */;
+			baseConfigurationReference = 51003B51E0D816FFA4ECAA24FD7DC729 /* Pods-RedditProjectTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -3429,7 +3305,7 @@
 		};
 		4DB2D134BAB5B1FDCE2B7C2418EB4519 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E13AA828EEC27EC9DDE7820017927051 /* Pods-RedditProject.release.xcconfig */;
+			baseConfigurationReference = 087E1D1CCB3EE972445BD68613AE1CF6 /* Pods-RedditProject.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -3472,53 +3348,6 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		861B7828B9ABC19541894A8EA57C29DC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = EC69BF30D76E6D1907D8549D44D6E091 /* Pods-RedditProject-RedditProjectUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-RedditProject-RedditProjectUITests/Pods-RedditProject-RedditProjectUITests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		965AF20BAB661FE81B3F7109DDC2603F /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BBB010721C6585D08212D5BF618BB74C /* Pods-RedditProject-RedditProjectUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-RedditProject-RedditProjectUITests/Pods-RedditProject-RedditProjectUITests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -3615,7 +3444,7 @@
 		};
 		F4A451B1FC9A8C01003A0ACCD8F70705 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CC3E2672E489B26DE388B126D461C763 /* Pods-RedditProject.debug.xcconfig */;
+			baseConfigurationReference = 067785F096DA127EBBE38C47F2A13346 /* Pods-RedditProject.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -3688,7 +3517,7 @@
 		};
 		FB8CC38C186B3B42415B17DC19A1521D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B396E375BB147861FCBEC7EDC9429496 /* Pods-RedditProjectTests.debug.xcconfig */;
+			baseConfigurationReference = 5A4E4C94035DF37FFBBE148AC6F96ED5 /* Pods-RedditProjectTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -3738,15 +3567,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		382051BD7972208A2D8F9207926CDB99 /* Build configuration list for PBXNativeTarget "Pods-RedditProject-RedditProjectUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				861B7828B9ABC19541894A8EA57C29DC /* Debug */,
-				965AF20BAB661FE81B3F7109DDC2603F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

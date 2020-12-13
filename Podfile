@@ -18,8 +18,4 @@ target 'RedditProject' do
    testing_pods
   end
 
-  target 'RedditProjectUITests' do
-    # Pods for testing
-  end
-
 end
