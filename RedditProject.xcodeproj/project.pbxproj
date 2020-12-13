@@ -26,7 +26,7 @@
 		F21E813925865A9900331C06 /* RedditDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21E813825865A9800331C06 /* RedditDetailsViewModel.swift */; };
 		F21E8157258680B900331C06 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21E8156258680B900331C06 /* UIView+Extension.swift */; };
 		F21E81682586936F00331C06 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21E81672586936F00331C06 /* UITableView+Extension.swift */; };
-		F21E816E25869B0B00331C06 /* RedditDetailsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21E816D25869B0B00331C06 /* RedditDetailsViewModelTests.swift */; };
+		F21E816E25869B0B00331C06 /* RedditDetailsViewModelSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21E816D25869B0B00331C06 /* RedditDetailsViewModelSpecs.swift */; };
 		F21E817925869B1C00331C06 /* RedditListViewModelSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21E817825869B1C00331C06 /* RedditListViewModelSpecs.swift */; };
 		F21E817F25869B4400331C06 /* FakeModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21E817E25869B4400331C06 /* FakeModels.swift */; };
 		F21E81982586A2EF00331C06 /* FakeRespository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21E81972586A2EF00331C06 /* FakeRespository.swift */; };
@@ -80,7 +80,7 @@
 		F21E813825865A9800331C06 /* RedditDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedditDetailsViewModel.swift; sourceTree = "<group>"; };
 		F21E8156258680B900331C06 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		F21E81672586936F00331C06 /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
-		F21E816D25869B0B00331C06 /* RedditDetailsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedditDetailsViewModelTests.swift; sourceTree = "<group>"; };
+		F21E816D25869B0B00331C06 /* RedditDetailsViewModelSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedditDetailsViewModelSpecs.swift; sourceTree = "<group>"; };
 		F21E817825869B1C00331C06 /* RedditListViewModelSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedditListViewModelSpecs.swift; sourceTree = "<group>"; };
 		F21E817E25869B4400331C06 /* FakeModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeModels.swift; sourceTree = "<group>"; };
 		F21E81972586A2EF00331C06 /* FakeRespository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeRespository.swift; sourceTree = "<group>"; };
@@ -244,7 +244,7 @@
 		F21E817D25869B1F00331C06 /* ViewModelTests */ = {
 			isa = PBXGroup;
 			children = (
-				F21E816D25869B0B00331C06 /* RedditDetailsViewModelTests.swift */,
+				F21E816D25869B0B00331C06 /* RedditDetailsViewModelSpecs.swift */,
 				F21E817825869B1C00331C06 /* RedditListViewModelSpecs.swift */,
 			);
 			path = ViewModelTests;
@@ -460,7 +460,7 @@
 				F21E81982586A2EF00331C06 /* FakeRespository.swift in Sources */,
 				F2048CEE257E76A300D60DCF /* RedditProjectTests.swift in Sources */,
 				F21E817F25869B4400331C06 /* FakeModels.swift in Sources */,
-				F21E816E25869B0B00331C06 /* RedditDetailsViewModelTests.swift in Sources */,
+				F21E816E25869B0B00331C06 /* RedditDetailsViewModelSpecs.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -93,8 +93,5 @@ class RedditListViewModelSpecs: QuickSpec {
                 }
             }
         }
-        
-        
     }
-    
 }
