@@ -11,7 +11,7 @@ import RxSwift
 class RedditListViewModel {
     
     private let _disposeBag = DisposeBag()
-    private let _redditService = RedditService.shared
+    private let _redditService: RedditServiceProtocol = RedditService.shared
     private var _topEntries: [ResultTopEntries] = []
     
     private let _reloadTable = PublishSubject<()>()
@@ -57,7 +57,7 @@ class RedditListViewModel {
 
 private extension RedditListViewModel {
     func requestTopEntries() {
-        RedditService.shared
+        _redditService
             .getTopEntries()
             .observeOn(MainScheduler.instance)
             .subscribe(onNext: { [weak self] entries in

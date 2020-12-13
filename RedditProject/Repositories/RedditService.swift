@@ -9,10 +9,8 @@ import Foundation
 import UIKit
 import RxSwift
 
-//TODO: Use this protocol
 protocol RedditServiceProtocol {
     func getTopEntries() -> Observable<[ResultTopEntries]>
-    func requestToken() -> Observable<String>
 }
 
 class RedditService: RedditServiceProtocol {
@@ -50,14 +48,13 @@ class RedditService: RedditServiceProtocol {
                 return
             }
             
-            //TODO Make better
-            if httpResponse.statusCode == 401 {
-                
-                self.requestToken(success: { _ in
+            switch httpResponse.statusCode {
+            case 401:
+                self.requestToken(success: {
                     self.getTopEntries(success: success, failure: failure)
                 }, failure: failure)
                 
-            } else if httpResponse.statusCode == 200 {
+            case 200:
                 guard let data = data,
                       let json = try? JSONSerialization.jsonObject(with: data, options: []),
                       let jsonDic = json as? [String: Any],
@@ -68,27 +65,15 @@ class RedditService: RedditServiceProtocol {
                     failure?(RedditServerError(message: "Cant deserialize response from server"))
                     return
                 }
-                print(redditEntries)
                 success(redditEntries)
-            } else {
+            default:
                 failure?(RedditServerError(message: "Cant connect to the server"))
             }
         })
         task.resume()
     }
-        
-    func requestToken() -> Observable<String> {
-        return Observable.create { observer in
-            self.requestToken(success: {
-                observer.onNext($0)
-                observer.onCompleted()
-            },
-            failure: { observer.onError($0) })
-            return Disposables.create()
-        }
-    }
-    
-    private func requestToken(success: @escaping (String) -> Void, failure: ((_ error: Error) -> Void)?) {       
+
+    private func requestToken(success: @escaping () -> Void, failure: ((_ error: Error) -> Void)?) {
         let ACCESS_TOKEN_URL = "https://www.reddit.com/api/v1/access_token"
         let GRANT_TYPE = "https://oauth.reddit.com/grants/installed_client"
         let DEVICE_ID = "DO_NOT_TRACK_THIS_DEVICE"
@@ -129,10 +114,8 @@ class RedditService: RedditServiceProtocol {
                 failure?(RedditServerError(message: "Cant deserialize response from server"))
                 return
             }
-            //TODO: 
             NetworkConfigs.sharedInstance.accessToken = accessToken
-            print(accessToken)
-            success(accessToken)
+            success()
             return
         }.resume()
 
