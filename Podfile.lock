@@ -1,4 +1,6 @@
 PODS:
+  - Nimble (9.0.0)
+  - Quick (3.0.0)
   - RxCocoa (5.1.1):
     - RxRelay (~> 5)
     - RxSwift (~> 5)
@@ -10,23 +12,29 @@ PODS:
   - SDWebImage/Core (5.10.0)
 
 DEPENDENCIES:
+  - Nimble (= 9.0.0)
+  - Quick (= 3.0.0)
   - RxCocoa (= 5.1.1)
   - RxSwift (= 5.1.1)
   - SDWebImage (= 5.10.0)
 
 SPEC REPOS:
   trunk:
+    - Nimble
+    - Quick
     - RxCocoa
     - RxRelay
     - RxSwift
     - SDWebImage
 
 SPEC CHECKSUMS:
+  Nimble: 3b4ec3fd40f1dc178058e0981107721c615643d8
+  Quick: 6d9559f40647bc4d510103842ef2fdd882d753e2
   RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
   RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
   RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
   SDWebImage: 9169792e9eec3e45bba2a0c02f74bf8bd922d1ee
 
-PODFILE CHECKSUM: 70afd07e7213add50f5e3c4346611aefb33c5c4c
+PODFILE CHECKSUM: d5b07c0f0fd800761c5a94622e0526f4f32fd141
 
 COCOAPODS: 1.9.1
