@@ -16,7 +16,8 @@ class RedditListViewController: UIViewController {
     
     private let _disposeBag = DisposeBag()
     private let _viewModel = RedditListViewModel()
-        
+    private let _refreshControl = UIRefreshControl()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         bindView()
@@ -57,6 +58,16 @@ private extension RedditListViewController {
                 tableView.deleteRows(at: indexPaths, with: .fade)
             })
             .disposed(by: _disposeBag)
+    }
+    
+    func bindViewModel() {
+        _viewModel.reloadTable
+            .observeOn(MainScheduler.instance)
+            .subscribe(onNext: { [weak self] _ in
+                self?.tableView.reloadData()
+                self?._refreshControl.endRefreshing()
+            })
+            .disposed(by: _disposeBag)
         
         _viewModel
             .loadingTransactions
@@ -71,15 +82,6 @@ private extension RedditListViewController {
             .disposed(by: _disposeBag)
 
     }
-    
-    func bindViewModel() {
-        _viewModel.reloadTable
-            .observeOn(MainScheduler.instance)
-            .subscribe(onNext: { [weak self] _ in
-                self?.tableView.reloadData()
-            })
-            .disposed(by: _disposeBag)
-    }
     func setStyle() {
         view.backgroundColor = .black
     }
@@ -91,6 +93,11 @@ private extension RedditListViewController {
         tableView.separatorColor = .white
         tableView.backgroundColor = .black
         tableView.tableFooterView = UIView()
+        
+        _refreshControl.tintColor = .white
+        _refreshControl.attributedTitle = NSAttributedString(string: "Loading new Data")
+        _refreshControl.addTarget(self, action: #selector(refreshData), for: .valueChanged)
+        tableView.refreshControl = _refreshControl
     }
     
     func prepareNavigationBar() {
@@ -125,6 +132,10 @@ private extension RedditListViewController {
                 self?.tableView.endUpdates()
             })
             .disposed(by: cell.disposeBag)
+    }
+    
+    @objc func refreshData() {
+        _viewModel.refreshAllData()
     }
 }
 

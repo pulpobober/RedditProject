@@ -58,10 +58,13 @@ class RedditListViewModel {
     }
     
     func requestMorePages() {
-        guard _afterPagination != nil else {
-            return
-        }
+        guard _afterPagination != nil else { return }
         requestTopEntries(afterPagination: _afterPagination)
+    }
+    
+    func refreshAllData() {
+        deleteAllPosts()
+        requestTopEntries(afterPagination: nil)
     }
 }
 
@@ -76,7 +79,6 @@ private extension RedditListViewModel {
                 self?._afterPagination = response.after
                 self?._topEntries += response.children
                 self?._reloadTable.onNext(())
-
             })
             .disposed(by: self._disposeBag)
     }
