@@ -49,6 +49,11 @@ class RedditListViewModel {
     func getRedditDetailsViewModel(redditEntrie: RedditEntrie) -> RedditDetailsViewModel {
         return RedditDetailsViewModel(redditEntrie: redditEntrie)
     }
+    
+    func visitedRedditEntrie(index: Int) {
+        getRedditEntrie(index: index)?.changeVisited(visited: true)
+    }
+    
 }
 
 private extension RedditListViewModel {

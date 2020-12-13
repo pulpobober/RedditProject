@@ -46,19 +46,21 @@ class RedditListViewCell: UITableViewCell {
         commentsLabel.text = viewModel.numComments
     }
     
-    //TODO prepare:
-//    override func prepareForReuse() {
-//        super.prepareForReuse()
-//        authorLabel.text = ""
-//    }
+    func visitedCell() {
+        unreadStatusView.isHidden = true
+        titleLabel.textColor = .lightGray
+        dateLabel.textColor = .lightGray
+        authorLabel.textColor = .lightGray
+    }
 }
 
 private extension RedditListViewCell {
     func setStyle() {
-        //TODO: Disclosure que se vea un poco mas
-        accessoryType = .disclosureIndicator
+        let image = UIImage(systemName: "chevron.right")?.withTintColor(.white, renderingMode: .alwaysOriginal)
+        let accessoryImageView = UIImageView(image: image)
+        accessoryView = accessoryImageView
         accessoryView?.backgroundColor = .black
-        
+
         contentView.backgroundColor = .black
         backgroundColor = .black
         selectionStyle = .none
@@ -81,7 +83,7 @@ private extension RedditListViewCell {
     
     func prepareDateLabel() {
         dateLabel.textColor = .white
-        dateLabel.font = UIFont.systemFont(ofSize: 10, weight: .light)
+        dateLabel.font = UIFont.systemFont(ofSize: 12, weight: .light)
         dateLabel.textAlignment = .left
     }
 

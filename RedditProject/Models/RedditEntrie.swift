@@ -7,13 +7,14 @@
 
 import Foundation
 
-struct RedditEntrie: Codable {
+//I have to use a Class instead of a struct because I want to modify the "visited" element
+class RedditEntrie: Codable {
     let title: String
     let author: String
     let created: Int
     let thumbnail: String
     let numComments: Int
-    let visited: Bool
+    var visited: Bool
 }
 
 extension RedditEntrie {
@@ -25,5 +26,9 @@ extension RedditEntrie {
         case visited
         
         case numComments = "num_comments"
+    }
+    
+    func changeVisited(visited: Bool) {
+        self.visited = visited
     }
 }

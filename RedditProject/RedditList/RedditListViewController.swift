@@ -141,7 +141,9 @@ extension RedditListViewController: UITableViewDelegate, UITableViewDataSource {
     
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        //TODO: select cell and change blue icon
+        guard let cell = tableView.cellForRow(at: indexPath) as? RedditListViewCell else { return }
+        cell.visitedCell()
+        _viewModel.visitedRedditEntrie(index: indexPath.row)
     }
     
 }
