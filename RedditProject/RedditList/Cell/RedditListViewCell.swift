@@ -98,6 +98,7 @@ private extension RedditListViewCell {
     
     func preparePostImage() {
         postImage.contentMode = .scaleAspectFit
+        postImage.isUserInteractionEnabled = true
     }
     
     func prepareDismissButton() {

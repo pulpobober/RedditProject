@@ -132,6 +132,20 @@ private extension RedditListViewController {
                 self?.tableView.endUpdates()
             })
             .disposed(by: cell.disposeBag)
+        
+        cell.postImage
+            .tapped()
+            .observeOn(MainScheduler.instance)
+            .subscribe(onNext: { [weak self] _ in
+                guard let indexPath = self?.tableView.indexPath(for: cell),
+                      let redditImageUrlString = self?._viewModel.getRedditEntrie(index: indexPath.row)?.url,
+                      let redditImageUrl = URL(string: redditImageUrlString) else {
+                    return
+                }
+                UIApplication.shared.open(redditImageUrl)
+            })
+            .disposed(by: cell.disposeBag)
+
     }
     
     @objc func refreshData() {
