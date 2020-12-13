@@ -95,7 +95,6 @@ private extension RedditListViewController {
         tableView.tableFooterView = UIView()
         
         _refreshControl.tintColor = .white
-        _refreshControl.attributedTitle = NSAttributedString(string: "Loading new Data")
         _refreshControl.addTarget(self, action: #selector(refreshData), for: .valueChanged)
         tableView.refreshControl = _refreshControl
     }
