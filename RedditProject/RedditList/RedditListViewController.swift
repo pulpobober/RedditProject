@@ -57,6 +57,19 @@ private extension RedditListViewController {
                 tableView.deleteRows(at: indexPaths, with: .fade)
             })
             .disposed(by: _disposeBag)
+        
+        _viewModel
+            .loadingTransactions
+            .observeOn(MainScheduler.instance)
+            .subscribe(onNext: { [weak self] loading in
+                if loading {
+                    self?.tableView.showBottomSpinner()
+                } else {
+                    self?.tableView.tableFooterView = UIView()
+                }
+            })
+            .disposed(by: _disposeBag)
+
     }
     
     func bindViewModel() {
@@ -130,6 +143,11 @@ extension RedditListViewController: UITableViewDelegate, UITableViewDataSource {
         cell.configureCell()
         cell.bindViewModel(viewModel: cellViewModel)
         bindCell(cell: cell)
+        
+        if indexPath.row == _viewModel.numberOfRows() - 1 {
+            _viewModel.requestMorePages()
+        }
+        
         return cell
     }
     

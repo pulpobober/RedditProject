@@ -11,3 +11,9 @@ struct ResultTopEntries: Codable {
     let data: RedditEntrie
     let kind: String
 }
+
+struct RedditResponse: Codable {
+    let after: String?
+    let before: String?
+    let children: [ResultTopEntries]
+}

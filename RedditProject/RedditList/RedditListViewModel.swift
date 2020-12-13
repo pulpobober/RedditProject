@@ -13,13 +13,16 @@ class RedditListViewModel {
     private let _disposeBag = DisposeBag()
     private let _redditService: RedditServiceProtocol = RedditService.shared
     private var _topEntries: [ResultTopEntries] = []
-    
+    private var _afterPagination: String?
     private let _reloadTable = PublishSubject<()>()
     let reloadTable: Observable<()>
+    private let _loadingTransactions = PublishSubject<(Bool)>()
+    let loadingTransactions: Observable<Bool>
 
     init() {
         reloadTable = _reloadTable
-        requestTopEntries()
+        loadingTransactions = _loadingTransactions
+        requestTopEntries(afterPagination: _afterPagination)
     }
     
     var titleNavigationBar: String {
@@ -53,16 +56,27 @@ class RedditListViewModel {
     func visitedRedditEntrie(index: Int) {
         getRedditEntrie(index: index)?.changeVisited(visited: true)
     }
+    
+    func requestMorePages() {
+        guard _afterPagination != nil else {
+            return
+        }
+        requestTopEntries(afterPagination: _afterPagination)
+    }
 }
 
 private extension RedditListViewModel {
-    func requestTopEntries() {
+    func requestTopEntries(afterPagination: String?) {
+        _loadingTransactions.onNext(true)
         _redditService
-            .getTopEntries()
+            .getTopEntries(afterPagination: afterPagination)
             .observeOn(MainScheduler.instance)
-            .subscribe(onNext: { [weak self] entries in
-                self?._topEntries = entries
+            .subscribe(onNext: { [weak self] response in
+                self?._loadingTransactions.onNext(false)
+                self?._afterPagination = response.after
+                self?._topEntries += response.children
                 self?._reloadTable.onNext(())
+
             })
             .disposed(by: self._disposeBag)
     }

@@ -10,7 +10,7 @@ import UIKit
 import RxSwift
 
 protocol RedditServiceProtocol {
-    func getTopEntries() -> Observable<[ResultTopEntries]>
+    func getTopEntries(afterPagination: String?) -> Observable<RedditResponse>
 }
 
 class RedditService: RedditServiceProtocol {
@@ -18,9 +18,9 @@ class RedditService: RedditServiceProtocol {
     
     static let shared = RedditService()
     
-    func getTopEntries() -> Observable<[ResultTopEntries]> {
+    func getTopEntries(afterPagination: String?) -> Observable<RedditResponse> {
         return Observable.create { observer in
-            self.getTopEntries(success: {
+            self.getTopEntries(after: afterPagination, success: {
                 observer.onNext($0)
                 observer.onCompleted()
             },
@@ -29,14 +29,26 @@ class RedditService: RedditServiceProtocol {
         }
     }
     
-    private func getTopEntries(success: @escaping ([ResultTopEntries]) -> Void, failure: ((_ error: Error) -> Void)?) {
+    private func getTopEntries(after: String?, success: @escaping (RedditResponse) -> Void, failure: ((_ error: Error) -> Void)?) {
         let session: URLSession = URLSession(configuration: URLSessionConfiguration.default)
         let urlString = "https://oauth.reddit.com/r/popular/top.json"
-        guard let url = URL(string: urlString) else {
+        
+        var items = [URLQueryItem]()
+        var urlComponents = URLComponents(string: urlString)
+        
+        if let after = after {
+            let param = ["after": after]
+            for (key,value) in param {
+                items.append(URLQueryItem(name: key, value: value))
+            }
+            urlComponents?.queryItems = items
+        }
+        
+        guard let url = urlComponents?.url else {
             failure?(RedditServerError(message: "The url is not an URL: \(urlString)"))
             return
         }
-        
+                
         var request = URLRequest(url: url)
         let token = "Bearer \(NetworkConfigs.sharedInstance.accessToken)"
         
@@ -51,7 +63,7 @@ class RedditService: RedditServiceProtocol {
             switch httpResponse.statusCode {
             case 401:
                 self.requestToken(success: {
-                    self.getTopEntries(success: success, failure: failure)
+                    self.getTopEntries(after: after, success: success, failure: failure)
                 }, failure: failure)
                 
             case 200:
@@ -59,9 +71,8 @@ class RedditService: RedditServiceProtocol {
                       let json = try? JSONSerialization.jsonObject(with: data, options: []),
                       let jsonDic = json as? [String: Any],
                       let jsonDicData = jsonDic["data"] as? [String: Any],
-                      let childrenDic = jsonDicData["children"] as? [Any],
-                      let jsonModel = try? JSONSerialization.data(withJSONObject: childrenDic),
-                      let redditEntries = try? JSONDecoder().decode([ResultTopEntries].self, from: jsonModel) else {
+                      let jsonModel = try? JSONSerialization.data(withJSONObject: jsonDicData),
+                      let redditEntries = try? JSONDecoder().decode(RedditResponse.self, from: jsonModel) else {
                     failure?(RedditServerError(message: "Cant deserialize response from server"))
                     return
                 }
