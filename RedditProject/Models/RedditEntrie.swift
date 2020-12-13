@@ -16,6 +16,16 @@ class RedditEntrie: Codable {
     let numComments: Int
     var visited: Bool
     let url: String
+    
+    init(title: String, author: String, created: Int, thumbnail: String, numComments: Int, visited: Bool, url: String) {
+        self.title = title
+        self.author = author
+        self.created = created
+        self.thumbnail = thumbnail
+        self.numComments = numComments
+        self.visited = visited
+        self.url = url
+    }
 }
 
 extension RedditEntrie {

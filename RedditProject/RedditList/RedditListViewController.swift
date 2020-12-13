@@ -15,7 +15,7 @@ class RedditListViewController: UIViewController {
     @IBOutlet weak var dismissAllButton: UIButton!
     
     private let _disposeBag = DisposeBag()
-    private let _viewModel = RedditListViewModel()
+    private let _viewModel = RedditListViewModel(redditService: RedditService.shared)
     private let _refreshControl = UIRefreshControl()
     
     override func viewDidLoad() {

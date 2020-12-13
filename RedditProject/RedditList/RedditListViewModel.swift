@@ -11,7 +11,7 @@ import RxSwift
 class RedditListViewModel {
     
     private let _disposeBag = DisposeBag()
-    private let _redditService: RedditServiceProtocol = RedditService.shared
+    private let _redditService: RedditServiceProtocol
     private var _topEntries: [ResultTopEntries] = []
     private var _afterPagination: String?
     private let _reloadTable = PublishSubject<()>()
@@ -19,9 +19,10 @@ class RedditListViewModel {
     private let _loadingTransactions = PublishSubject<(Bool)>()
     let loadingTransactions: Observable<Bool>
 
-    init() {
+    init(redditService: RedditServiceProtocol) {
         reloadTable = _reloadTable
         loadingTransactions = _loadingTransactions
+        _redditService = redditService
         requestTopEntries(afterPagination: _afterPagination)
     }
     
