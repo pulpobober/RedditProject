@@ -15,6 +15,7 @@ class RedditEntrie: Codable {
     let thumbnail: String
     let numComments: Int
     var visited: Bool
+    let url: String
 }
 
 extension RedditEntrie {
@@ -24,7 +25,7 @@ extension RedditEntrie {
         case created
         case thumbnail
         case visited
-        
+        case url
         case numComments = "num_comments"
     }
     

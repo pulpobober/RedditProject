@@ -46,8 +46,7 @@ private extension RedditListViewController {
         prepareDismissButton()
         
         dismissAllButton
-            .rx
-            .tap
+            .tapped()
             .observeOn(MainScheduler.instance)
             .subscribe(onNext: { [weak self] _ in
                 guard let tableView = self?.tableView,
@@ -100,8 +99,7 @@ private extension RedditListViewController {
     
     func bindCell(cell: RedditListViewCell) {
         cell.dismissButton
-            .rx
-            .tap
+            .tapped()
             .observeOn(MainScheduler.instance)
             .subscribe(onNext: { [weak self] _ in
                 guard let indexPath = self?.tableView.indexPath(for: cell) else {

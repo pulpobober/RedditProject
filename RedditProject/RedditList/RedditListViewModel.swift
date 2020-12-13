@@ -53,7 +53,6 @@ class RedditListViewModel {
     func visitedRedditEntrie(index: Int) {
         getRedditEntrie(index: index)?.changeVisited(visited: true)
     }
-    
 }
 
 private extension RedditListViewModel {

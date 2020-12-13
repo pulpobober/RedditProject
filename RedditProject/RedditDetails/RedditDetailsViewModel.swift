@@ -25,4 +25,8 @@ class RedditDetailsViewModel {
     var thumbURL: URL? {
         return URL(string: redditEntrie.thumbnail)
     }
+    
+    var fullImageUrl: URL? {
+        return URL(string: redditEntrie.url)
+    }
 }
